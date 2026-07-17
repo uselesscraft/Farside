@@ -12,7 +12,7 @@ if (canMove and !global.climbing) {
 		MoveSpeed = nor_speed
 	}
 	
-	//random line thingy
+	//random line thingyaaa
 	
 	function priority(arg0) {
 		if (prio == -1) {
