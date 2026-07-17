@@ -117,6 +117,10 @@ if (canMove and !global.climbing) {
 	}
 	
 	depth = -bbox_bottom
+	
+	if (sprite_index == spr_eliasclimb) {
+		sprite_index = spriteUp
+	}
 } else if (!global.climbing) {
 	image_index = 0
 	image_speed = 0
@@ -133,8 +137,6 @@ if (canMove and !global.climbing) {
 		} else {
 			moving = false
 		}
-		
-		y = clamp(y, obj)
 	
 		if (moving == true) {
 			image_speed = 1
@@ -147,13 +149,11 @@ if (canMove and !global.climbing) {
 		} else if (upKey) {
 			targetlerpy -= 20
 		}
-	else {
+	} else {
 		x = lerp(x, targetlerp, 0.2)
 		y = lerp(y, targetlerpy, 0.2)
-		targetlerpy -= 20
 		
-		y = clamp(y, )
+		if (heightclamp) { targetlerpy = clamp(targetlerpy, 0, obj_ladderbegin.y - 15) }
 	}
-}
 }
 event_user(1)

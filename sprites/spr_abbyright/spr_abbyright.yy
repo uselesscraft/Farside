@@ -26,7 +26,7 @@
   ],
   "name":"spr_abbyright",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Abbigail",
     "path":"folders/Sprites/Characters/Abbigail.yy",
@@ -87,7 +87,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":17,
+    "xorigin":20,
     "yorigin":27,
   },
   "swatchColours":null,

@@ -1,3 +1,9 @@
+show_debug_message(x)
+show_debug_message(y)
+
+if (global.climbing) { visible = false; depth = 9999; exit }
+else { visible = true }
+
 depth = -bbox_bottom
 
 x = plr.pos_x[my_record]

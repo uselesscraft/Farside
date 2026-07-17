@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_abby",
+  "%Name":"obj_ladderbegin",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_abby",
+  "name":"obj_ladderbegin",
   "overriddenProperties":[],
   "parent":{
-    "name":"Party",
-    "path":"folders/Objects/Party.yy",
+    "name":"Cool",
+    "path":"folders/Objects/Cool.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_abbydown",
-    "path":"sprites/spr_abbydown/spr_abbydown.yy",
+    "name":"spr_ladder",
+    "path":"sprites/spr_ladder/spr_ladder.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_abbydown",
-    "path":"sprites/spr_abbydown/spr_abbydown.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
