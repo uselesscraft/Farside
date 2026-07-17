@@ -1,0 +1,1 @@
+text = ["Oh... what are you doing in the forest of frogs and birds?", "Yup!      #That's what it's called."]

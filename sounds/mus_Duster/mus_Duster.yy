@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_Duster",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":10,
+  "conversionMode":0,
+  "duration":60.551178,
+  "exportDir":"Music",
+  "name":"mus_Duster",
+  "parent":{
+    "name":"Flavor Areas",
+    "path":"folders/Sounds/Flavor Areas.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_Duster.mp3",
+  "volume":1.0,
+}

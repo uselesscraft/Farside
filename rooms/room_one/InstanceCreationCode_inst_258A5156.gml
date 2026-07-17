@@ -1,0 +1,4 @@
+text = [
+	"It's a tree.",
+	"... If you can't tell.",
+]

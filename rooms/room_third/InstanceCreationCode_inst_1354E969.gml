@@ -1,0 +1,1 @@
+text = ["(Ribbit, ribbit...?)", "My friend wants to learn the language of cars.", "That's cool, but hecka weird!", "What do you think?"]

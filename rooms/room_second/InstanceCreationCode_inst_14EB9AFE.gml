@@ -1,0 +1,1 @@
+text = ["(Vroom vroom!)", "I'm a Frog that speaks the language of cars.", "I wanna master it in the future!"]

@@ -1,0 +1,1 @@
+text = ["(Ribbit, ribbit, ribbit...)", "Human!      #Be peaceful towards us!", "There are many frogs in this area."]

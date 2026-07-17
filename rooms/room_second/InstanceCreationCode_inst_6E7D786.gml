@@ -1,0 +1,1 @@
+text = ["How's it going in the village?", "... Terrible?", "That sucks...", "#May God be with ya!"]

@@ -1,0 +1,1 @@
+text = ["This tree is facing another tree, making some kind of path...", "This will lead you to the next room."]

@@ -1,0 +1,1 @@
+text = ["You couldn't help but notice an old, broken mirror deep in the bushes.", "...", "... It's you!"]

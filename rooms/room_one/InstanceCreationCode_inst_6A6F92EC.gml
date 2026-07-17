@@ -1,0 +1,1 @@
+text = ["(Ribbit, ribbit...)", "Wait... I'm a frog that talks normally!      #I don't need to say ribbit!", "Anyways, lil' human!", "How you doin' today?"]
