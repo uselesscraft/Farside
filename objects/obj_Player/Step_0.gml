@@ -149,11 +149,14 @@ if (canMove and !global.climbing) {
 		} else if (upKey) {
 			targetlerpy -= 20
 		}
+		
+		if (heightclamp) { targetlerpy = clamp(targetlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
+		
 	} else {
 		x = lerp(x, targetlerp, 0.2)
 		y = lerp(y, targetlerpy, 0.2)
 		
-		if (heightclamp) { targetlerpy = clamp(targetlerpy, 0, obj_ladderbegin.y - 15) }
+		if (heightclamp) { targetlerpy = clamp(targetlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
 	}
 }
 event_user(1)

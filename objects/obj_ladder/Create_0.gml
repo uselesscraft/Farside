@@ -1,3 +1,0 @@
-climbing = false
-
-done = false

@@ -1,10 +1,5 @@
-show_debug_message(x)
-show_debug_message(y)
-
-if (global.climbing) { visible = false; depth = 9999; exit }
+if (global.climbing) { visible = false; exit }
 else { visible = true }
-
-depth = -bbox_bottom
 
 x = plr.pos_x[my_record]
 y = plr.pos_y[my_record]
@@ -18,6 +13,8 @@ if (recordedsprite == spr_eliasdown) {
 } else if (recordedsprite == spr_eliasright) {
 	sprite_index = rsprite
 } else if (recordedsprite == spr_eliasleft) {
+	sprite_index = lsprite
+} else if (recordedsprite == spr_eliasclimb) {
 	sprite_index = lsprite
 }
 

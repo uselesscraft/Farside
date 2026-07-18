@@ -13,7 +13,7 @@ if (!done) {
 } else if (done) {
 	var dist = (point_distance(x, y, obj_Player.x, obj_Player.y))
 
-	if (dist < 30 and keyboard_check_pressed(vk_shift)) {
+	if (dist < 25 and keyboard_check_pressed(vk_shift)) {
 		obj_Player.targetlerp = obj_markerla.x
 		obj_Player.targetlerpy = obj_markerla.y + 32
 		
@@ -29,8 +29,10 @@ if (goingback) {
 			global.climbing = false
 			
 			other.goingback = false
+			heightclamp = true
 		}
 	}
 }
 
 if (!global.climbing) { done = false }
+

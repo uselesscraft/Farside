@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_abbydown",
   "bboxMode":2,
-  "bbox_bottom":53,
+  "bbox_bottom":54,
   "bbox_left":14,
   "bbox_right":34,
   "bbox_top":38,

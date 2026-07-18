@@ -135,6 +135,7 @@
     {"id":{"name":"room_one","path":"rooms/room_one/room_one.yy",},},
     {"id":{"name":"room_second","path":"rooms/room_second/room_second.yy",},},
     {"id":{"name":"room_third","path":"rooms/room_third/room_third.yy",},},
+    {"id":{"name":"scr_inputs","path":"scripts/scr_inputs/scr_inputs.yy",},},
     {"id":{"name":"scr_Macros","path":"scripts/scr_Macros/scr_Macros.yy",},},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},},
     {"id":{"name":"scr_movecam","path":"scripts/scr_movecam/scr_movecam.yy",},},

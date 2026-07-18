@@ -36,4 +36,3 @@ if (closing == false) {
 	}
 }
 
-show_debug_message(player_move)

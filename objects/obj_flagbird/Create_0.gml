@@ -1,7 +1,7 @@
 /// @description Set things
 // You can write your code in this editor
 
-text = ["Hey! Did you just look at me?", "Oh, hi!", "I'm just a little bird.      #Don't worry, I won't fly away like the others.", "Wanna see something?", "Ready? 3... 2... 1...      #Boo!", "Haha! I did I get ya?", "Oh, sorry!", "People don't usually get startled a little bird... but you kinda seem jumpy."]
+text = ["Yo! Finally! You noticed me.", "Hi!", "I'm just a bird.      #I don't fly away like the others though.", "Oh... hey! Wanna see something?", "Yeah! 3... 2... 1...      #Boo!", "Haha! I scared you!", "Oh, sorry.", "I thought people didn't get startled by a bird... but guess I was wrong!", "Well, sorry..."]
 text2 = ["Sorry..."]
 
 move = false
