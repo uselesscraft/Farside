@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_Rightbattle",
+  "%Name":"spr_eliasbattlelookbad",
   "bboxMode":0,
   "bbox_bottom":57,
   "bbox_left":0,
@@ -22,7 +22,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","blendMode":0,"displayName":"default","isLocked":false,"name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_Rightbattle",
+  "name":"spr_eliasbattlelookbad",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_Rightbattle",
+    "%Name":"spr_eliasbattlelookbad",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_Rightbattle",
+    "name":"spr_eliasbattlelookbad",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -72,10 +72,10 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2b3d4088-0266-42d3-ae17-c027d0df3df6","path":"sprites/spr_Rightbattle/spr_Rightbattle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2b3d4088-0266-42d3-ae17-c027d0df3df6","path":"sprites/spr_eliasbattlelookbad/spr_eliasbattlelookbad.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ef683f94-61df-4757-98a8-8243a52b223a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00a2b35d-c67b-41b2-a260-291c0884ffa6","path":"sprites/spr_Rightbattle/spr_Rightbattle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00a2b35d-c67b-41b2-a260-291c0884ffa6","path":"sprites/spr_eliasbattlelookbad/spr_eliasbattlelookbad.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9bcb64f8-6cbd-43fc-87c9-04b087ac0066","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

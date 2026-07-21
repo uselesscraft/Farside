@@ -22,7 +22,7 @@
   "height":58,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","blendMode":0,"displayName":"default","isLocked":false,"name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","blendMode":0,"displayName":"Torso","isLocked":false,"name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_eliasright",
   "nineSlice":null,
