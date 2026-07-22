@@ -16,7 +16,7 @@ global.mypartydata =
 		level: 1,
 		durability: 10,
 		spd: 10,
-		sprites : { idle: spr_eliasright },
+		sprites : { idle: spr_eliasbattle },
 		actions : [] //info: to be filled in the future
 	}
 	,
