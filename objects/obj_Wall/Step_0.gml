@@ -1,3 +1,3 @@
 /// @description sets depth
 // You can write your code in this editor
-depth = -bbox_bottom
+if (room != room_battle) depth = -bbox_bottom

@@ -190,6 +190,7 @@
     {"id":{"name":"spr_eliasleft","path":"sprites/spr_eliasleft/spr_eliasleft.yy",},},
     {"id":{"name":"spr_eliasright","path":"sprites/spr_eliasright/spr_eliasright.yy",},},
     {"id":{"name":"spr_eliasup","path":"sprites/spr_eliasup/spr_eliasup.yy",},},
+    {"id":{"name":"spr_Fench","path":"sprites/spr_Fench/spr_Fench.yy",},},
     {"id":{"name":"spr_Frog","path":"sprites/spr_Frog/spr_Frog.yy",},},
     {"id":{"name":"spr_FrogEvil","path":"sprites/spr_FrogEvil/spr_FrogEvil.yy",},},
     {"id":{"name":"spr_FrogNpc","path":"sprites/spr_FrogNpc/spr_FrogNpc.yy",},},
@@ -219,8 +220,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_one","path":"rooms/room_one/room_one.yy",},},
-    {"roomId":{"name":"room_fourth","path":"rooms/room_fourth/room_fourth.yy",},},
     {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
+    {"roomId":{"name":"room_fourth","path":"rooms/room_fourth/room_fourth.yy",},},
     {"roomId":{"name":"room_second","path":"rooms/room_second/room_second.yy",},},
     {"roomId":{"name":"room_third","path":"rooms/room_third/room_third.yy",},},
   ],
