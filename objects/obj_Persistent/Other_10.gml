@@ -37,17 +37,20 @@ global.mypartydata =
 		sprites : { idle: spr_abbybattle },
 		actions : [] //info: to be filled in the future
 	}
-	//,
-	//{
-	//	name: "Daan",
-	//	hp: 30,
-	//	hpmax: 30,
-	//	strength: 15 ,
-	//	hope: 0,
-	//	level: 1,
-	//	durability: 20,
-	//	spd: 5,
-	//	actions : []
-	//}
+	,
+	{
+		name: "Abbigail",
+		hp: 25,
+		hpmax: 25,
+		attack: 5,
+		defense: 5,
+		mw: 10,
+		spd: 20,
+		xp: 0,
+		lv: 1,
+		_id: 1,
+		sprites : { idle: spr_abbybattle },
+		actions : [] //info: to be filled in the future
+	}
 ]
 
