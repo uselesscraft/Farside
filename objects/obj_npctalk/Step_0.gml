@@ -1,8 +1,8 @@
-var dist = point_distance(x, y, obj_Player.x, obj_Player.y)
+var dist = point_distance(x, y, obj_mainchara.x, obj_mainchara.y)
 
 if ((keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0, gp_face2) == true) and dist < range and !instance_exists(obj_Textbox)) {	
-	var dirnpc = point_direction(obj_Player.x, obj_Player.y, x, y)
-	var dirdiff = angle_difference(obj_Player.direction, dirnpc)
+	var dirnpc = point_direction(obj_mainchara.x, obj_mainchara.y, x, y)
+	var dirdiff = angle_difference(obj_mainchara.direction, dirnpc)
 	
 	if (abs(dirdiff) < 64 and !cometrigger) {
 	    startdialogue()
@@ -32,11 +32,11 @@ if (global.textboxfinish) {
 }
 
 if (cometrigger) {
-	obj_camera.follow = obj_Player
+	obj_camera.follow = obj_mainchara
 	
-	if (obj_camera.x == obj_Player.x and obj_camera.y == obj_Player.y) {
+	if (obj_camera.x == obj_mainchara.x and obj_camera.y == obj_mainchara.y) {
 		obj_camera.move = false
-		obj_Player.canMove = true
+		obj_mainchara.canMove = true
 		
 		cometrigger = false
 	}

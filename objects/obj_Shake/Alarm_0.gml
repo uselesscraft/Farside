@@ -1,1 +1,2 @@
-shakeMult = -shakeMult
+shakemult = -shakemult
+

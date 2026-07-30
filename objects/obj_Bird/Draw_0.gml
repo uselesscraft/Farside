@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (state != "flee") {
-	Shadow()
+	shadow()
 } else {
 	draw_self()
 }

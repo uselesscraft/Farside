@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var player = obj_Player
+var player = obj_mainchara
 
 var dist = point_distance(x, y, player.x, player.y)
 

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_BlackUi",
-    "path":"sprites/spr_BlackUi/spr_BlackUi.yy",
+    "name":"spr_black",
+    "path":"sprites/spr_black/spr_black.yy",
   },
   "spriteMaskId":null,
   "visible":true,

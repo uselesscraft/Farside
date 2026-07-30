@@ -1,5 +1,6 @@
-// Time
+//time
 #macro TIME time_source_units_seconds
 
-// Flags
-#macro NEWS_REPORTER 1
+//flags
+#macro BIRD_FLAG 0
+#macro BIRD_FLAG2 1

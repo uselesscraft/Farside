@@ -28,8 +28,8 @@ if (closing == false) {
 	if (abs(y - default_y) < 0.1) {
 		y = default_y
 		
-		if (instance_exists(obj_Player) == true and player_move == true) {
-			obj_Player.canMove = true
+		if (instance_exists(obj_mainchara) == true and player_move == true) {
+			obj_mainchara.canMove = true
 		}
 		
 		instance_destroy()

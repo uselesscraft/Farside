@@ -36,8 +36,8 @@ function enemy_take_damage(_amount) {
 }
 
 function enemy_die() {
-    if (instance_exists(obj_Shake) == false) {
-        var shake = instance_create_depth(0, 0, 0, obj_Shake)
+    if (instance_exists(obj_shake) == false) {
+        var shake = instance_create_depth(0, 0, 0, obj_shake)
         shake.obj = id
 
         audio_play_sound(snd_HitFinish, 10, false)

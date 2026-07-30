@@ -1,30 +1,30 @@
 if (!done) {
-	var dist = (point_distance(x, y, obj_Player.x, obj_Player.y))
+	var dist = (point_distance(x, y, obj_mainchara.x, obj_mainchara.y))
 
 	if (dist < 30 and keyboard_check_pressed(vk_enter)) {
 		global.climbing = true
 		
-		obj_Player.targetlerp = obj_markerla.x
-		obj_Player.targetlerpy = obj_markerla.y
-		obj_Player.heightclamp = true
+		obj_mainchara.targetlerp = obj_markerla.x
+		obj_mainchara.targetlerpy = obj_markerla.y
+		obj_mainchara.heightclamp = true
 		
 		done = true
 	}
 } else if (done) {
-	var dist = (point_distance(x, y, obj_Player.x, obj_Player.y))
+	var dist = (point_distance(x, y, obj_mainchara.x, obj_mainchara.y))
 
 	if (dist < 25 and keyboard_check_pressed(vk_shift)) {
-		obj_Player.targetlerp = obj_markerla.x
-		obj_Player.targetlerpy = obj_markerla.y + 32
+		obj_mainchara.targetlerp = obj_markerla.x
+		obj_mainchara.targetlerpy = obj_markerla.y + 32
 		
 		goingback = true
 	}
 }
 
 if (goingback) {
-	obj_Player.heightclamp = false
+	obj_mainchara.heightclamp = false
 	
-	with (obj_Player) {
+	with (obj_mainchara) {
 		if (abs(x - targetlerp) < 3 and abs(y - targetlerpy) < 3) {
 			global.climbing = false
 			

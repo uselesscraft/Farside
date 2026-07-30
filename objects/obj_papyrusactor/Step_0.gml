@@ -23,7 +23,7 @@ if (fun == false) {
 		scr_npcdir()
 	}
 	
-	var dir = point_direction(x, y, obj_Player.x, obj_Player.y)
+	var dir = point_direction(x, y, obj_mainchara.x, obj_mainchara.y)
 
 	if (dir >= 315 || dir < 45)
 	{
@@ -43,7 +43,7 @@ if (fun == false) {
 	}
 }
 
-var p = instance_nearest(x, y, obj_Player);
+var p = instance_nearest(x, y, obj_mainchara);
 var d = point_distance(x, y, p.x, p.y);
 
 if (d > 100) {
@@ -62,6 +62,6 @@ audio_sound_gain(mus_Papyrus, gain, 100)
 
 if (d < 42) {
 	if (keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0, gp_face2) == true) {
-		call_text(text, 0.5)
+		calltext(text, 0.5)
 	}
 }

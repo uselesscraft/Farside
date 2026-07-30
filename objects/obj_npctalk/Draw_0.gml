@@ -1,1 +1,1 @@
-if (shadow) { Shadow() }
+if (shadow) { shadow() }

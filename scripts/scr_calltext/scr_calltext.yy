@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_calltext",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_calltext",
+  "parent":{
+    "name":"Gameplay",
+    "path":"folders/Scripts/Gameplay.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

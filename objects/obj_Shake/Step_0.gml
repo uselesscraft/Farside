@@ -4,14 +4,15 @@ if (shake > 0) {
         alarm[0] = 2
     }
 
-    valX = shake * shakeMult
+    valx = shake * shakemult
 
     with (obj) {
-        x = x + other.valX
+        x = x + other.valx
     }
 
-    shake -= shakeDec
+    shake -= shakedec
 
 } else {
-    instance_destroy();
+    obj.x = firstx
 }
+

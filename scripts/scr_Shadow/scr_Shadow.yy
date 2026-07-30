@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_Shadow",
+  "%Name":"scr_shadow",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_Shadow",
+  "name":"scr_shadow",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Effects",
+    "path":"folders/Scripts/Effects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

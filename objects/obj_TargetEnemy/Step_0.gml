@@ -1,7 +1,7 @@
 var new_target = instance_nearest(plr.x, plr.y, obj_Enemy)
 var cam = view_camera[0]
 
-if (new_target == noone or instance_exists(obj_Shake) == true or point_distance(plr.x, plr.y, new_target.x, new_target.y) > max_distance) {
+if (new_target == noone or instance_exists(obj_shake) == true or point_distance(plr.x, plr.y, new_target.x, new_target.y) > max_distance) {
 	new_target = plr
 }
 
@@ -22,7 +22,7 @@ var target_y = current_target.y - view_h / 2
 target_x = clamp(target_x, 0, room_width - view_w)
 target_y = clamp(target_y, 0, room_height - view_h)
 
-if (current_target != obj_Player) {
+if (current_target != obj_mainchara) {
 	select.target = current_target
 	select._depth = current_target.depth
 } else {

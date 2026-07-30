@@ -9,8 +9,8 @@
   "name":"obj_FlagNews",
   "overriddenProperties":[],
   "parent":{
-    "name":"Events - Flags",
-    "path":"folders/Objects/Events - Flags.yy",
+    "name":"Events",
+    "path":"folders/Objects/Events.yy",
   },
   "parentObjectId":null,
   "persistent":false,

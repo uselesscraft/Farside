@@ -9,6 +9,3 @@ move = false
 trigger = false
 trigger2 = false
 
-#macro BIRD_FLAG 0
-#macro BIRD_FLAG2 1
-

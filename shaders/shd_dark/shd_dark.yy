@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_dark",
+  "name":"shd_dark",
+  "parent":{
+    "name":"zelda",
+    "path":"zelda.yyp",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

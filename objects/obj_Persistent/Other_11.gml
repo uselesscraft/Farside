@@ -1,11 +1,21 @@
-/// @description enemies Data
-//global.enemies =
-//{	
-//	frog:
-//	{
-//		name: "Evil Frog",
-//		hp: 30,
-//		strength: 5,
-//		sprites : 
-//	}
-//}
+/// @description enemies data
+global.enemies =
+{	
+	frog:
+	{
+		name: "Evil Frog",
+		hp: 30,
+		hpmax: 30,
+		damage: 5,
+		defense: 1,
+		xp: 5,
+		sprites : { idle: spr_FrogEvil },
+		actions : [],
+		execute : function()
+		{
+			//execute function
+			
+		}
+	}
+}
+

@@ -1,6 +1,8 @@
 shake = 5
-shakeMult = 1
-shakeDec = 0.15
+shakemult = 1
+shakedec = 0.15
 
 obj = obj_Enemy
-valX = 0
+firstx = obj.x
+valx = 0
+

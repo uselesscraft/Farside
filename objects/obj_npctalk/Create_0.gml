@@ -19,7 +19,7 @@ shadow = true
 
 function startdialogue() {
 	if (instance_exists(obj_Textbox) == false) {
-		call_text(text, 0.5)
+		calltext(text, 0.5)
 	}
 }
 
@@ -27,10 +27,10 @@ function faceplr() {
 	obj_Textbox.player_move = false 
 	obj_Textbox.player_stop_move = false
 	
-	obj_Player.canMove = false
+	obj_mainchara.canMove = false
 	
-	var dx = obj_Player.x - x
-	var dy = obj_Player.y - y
+	var dx = obj_mainchara.x - x
+	var dy = obj_mainchara.y - y
 
 	if (abs(dx) > abs(dy)) {
 	    if (dx > 0) {

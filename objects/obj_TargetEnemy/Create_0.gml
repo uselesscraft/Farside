@@ -1,7 +1,7 @@
 camera_x = camera_get_view_x(view_camera[0])
 camera_y = camera_get_view_y(view_camera[0])
 
-plr = obj_Player
+plr = obj_mainchara
 
 current_target = plr
 camera_moving = false

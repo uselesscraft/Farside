@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_Macros",
+  "%Name":"scr_macros",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_Macros",
+  "name":"scr_macros",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Globals",
+    "path":"folders/Scripts/Globals.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

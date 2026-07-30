@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (place_meeting(x, y, obj_Player) and global.flags[NEWS_REPORTER] == false) {
+if (place_meeting(x, y, obj_mainchara) and global.flags[NEWS_REPORTER] == false) {
 	trigger = true
 }
 
@@ -9,7 +9,7 @@ if (trigger == true) {
 		var mus = mus_Forest
 		audio_sound_gain(mus, 0, 300)
 		
-		call_text(text, 0.5)
+		calltext(text, 0.5)
 	} else {
 		obj_Textbox.player_move = true
 		obj_Textbox.player_stop_move = true

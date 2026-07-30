@@ -10,8 +10,8 @@
     "path":"folders/Objects/Uh... actual real life objects?.yy",
   },
   "parentObjectId":{
-    "name":"obj_Wall",
-    "path":"objects/obj_Wall/obj_Wall.yy",
+    "name":"obj_collider",
+    "path":"objects/obj_collider/obj_collider.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
