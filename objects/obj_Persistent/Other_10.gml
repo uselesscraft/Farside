@@ -14,9 +14,11 @@ global.mypartydata =
 		hpmax: 20,
 		attack: 10,
 		defense: 10,
+		mw: 10,
 		spd: 10,
 		xp: 0,
 		lv: 1,
+		_id: 0,
 		sprites : { idle: spr_eliasbattle },
 		actions : [] //info: to be filled in the future
 	}
@@ -27,9 +29,11 @@ global.mypartydata =
 		hpmax: 25,
 		attack: 5,
 		defense: 5,
+		mw: 10,
 		spd: 20,
 		xp: 0,
 		lv: 1,
+		_id: 1,
 		sprites : { idle: spr_abbybattle },
 		actions : [] //info: to be filled in the future
 	}
