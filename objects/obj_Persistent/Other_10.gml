@@ -19,7 +19,7 @@ global.mypartydata =
 		xp: 0,
 		lv: 1,
 		_id: 0,
-		sprites : { idle: spr_eliasbattle },
+		sprites : { idle: spr_eliasbattleidle },
 		actions : [] //info: to be filled in the future
 	}
 	,
