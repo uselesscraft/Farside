@@ -21,6 +21,9 @@ array_push(units, partyunits[global.currentmember])
 instance_create_depth(x, y, depth - 1, obj_curtain)
 instance_activate_object(obj_curtain)
 
+instance_create_depth(x, y, depth - 1, obj_arrow)
+instance_activate_object(obj_arrow)
+
 bgx = 0
 
 //shuffle turn order

@@ -16,22 +16,6 @@ switch (current_state) {
 	break
 }
 
-if (current_state == RotationState.Right) {
-	x = sine(x, 0.15, -0.15)
-}
-
-else if (current_state == RotationState.Left) {
-	x = sine(x, 0.15, 0.15)
-}
-
-else if (current_state == RotationState.Up) {
-	y = sine(y, 0.15, 0.15)
-}
-
-else if (current_state == RotationState.Down) {
-	y = sine(y, 0.15, -0.15)
-}
-
 //SFX and stuff wowie!!!
 if (hor_sfx) {
 	if (keyboard_check_pressed(ord("A"))) { audio_play_sound(snd_Move, 10, false) }
@@ -52,3 +36,6 @@ else if (both_sfx) {
 }
 
 if (keyboard_check_pressed(vk_enter)) { audio_play_sound(snd_Select, 10, false) }
+
+x = lerp(_x, x, 0.2)
+y = lerp(_y, y, 0.2)

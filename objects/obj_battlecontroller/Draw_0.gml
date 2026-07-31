@@ -49,10 +49,15 @@ for (var i = 0; i < array_length(enemyunits); i++) {
 		draw_set_colour(c_gray)
 		if (chara.id == currentunit) { draw_set_colour(c_white) }
 		
-		show_debug_message(chara.id)
-		show_debug_message(currentunit)
+		obj_arrow._y = y + 145 + i * 8
+		obj_arrow.x = x + COLUMN_ENEMY
 		
-		draw_text(x + COLUMN_ENEMY, y + 145 + i * 9, chara.name)
+		obj_arrow.current_state = RotationState.Right
+		
+		obj_arrow.ver_sfx = true
+		obj_arrow.hor_sfx = false
+		
+		draw_text(x + COLUMN_ENEMY, y + 145 + i * 8, chara.name)
 	}
 }
 
@@ -70,7 +75,11 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	
 	//HP
 	draw_set_font(fnt_TextBattle2)
-	draw_sprite(spr_hp, 0, x + COLUMN_HP + 1, y + 153 + i * 9)
+	
+	var imgindex = 0
+	if (chara._id == global.currentmember) { imgindex = 1 }
+	
+	draw_sprite(spr_hp, imgindex, x + COLUMN_HP + 1, y + 153 + i * 9)
 	draw_set_colour(c_black)
 	
 	var hp = string_replace_all(string_format(chara.hp, 3, 0), " ", "0")
@@ -84,7 +93,7 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	
 	//MIND WAVES
 	draw_set_font(fnt_TextBattle2)
-	draw_sprite(spr_hp, 0, x + COLUMN_MW + 1, y + 153 + i * 9)
+	draw_sprite(spr_hp, imgindex, x + COLUMN_MW + 1, y + 153 + i * 9)
 	draw_set_colour(c_black)
 	
 	var mw = string_replace_all(string_format(chara.mw, 3, 0), " ", "0")

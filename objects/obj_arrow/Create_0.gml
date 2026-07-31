@@ -14,8 +14,8 @@ ver_sfx = false
 both_sfx = false
 press_sfx = true
 
-target_x = x
-target_y = y
+_x = x
+_y = y
 
-offset_x = 0
-offset_y = 0
+image_xscale = 0.5
+image_yscale = 0.5
