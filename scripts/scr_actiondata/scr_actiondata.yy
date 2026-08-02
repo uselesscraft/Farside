@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_actiondata",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_actiondata",
+  "parent":{
+    "name":"Globals",
+    "path":"folders/Scripts/Globals.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
