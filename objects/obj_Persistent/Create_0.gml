@@ -16,3 +16,7 @@ global.climbing = false
 
 cursor_sprite = spr_mouse
 window_set_cursor(cr_none)
+
+//shader
+application_surface_draw_enable(true)
+global.sunset = false

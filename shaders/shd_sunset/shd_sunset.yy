@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_sunset",
+  "name":"shd_sunset",
+  "parent":{
+    "name":"zelda",
+    "path":"zelda.yyp",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
