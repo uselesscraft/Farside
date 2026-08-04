@@ -17,7 +17,7 @@ press_sfx = true
 _x = x
 _y = y
 
-if (room == room_battle) {
+if (global.battle) {
 	image_xscale = 0.5
 	image_yscale = 0.5
 }

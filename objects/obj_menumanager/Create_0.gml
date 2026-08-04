@@ -1,0 +1,1 @@
+global.menuindex = 0

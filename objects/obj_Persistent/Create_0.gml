@@ -20,3 +20,6 @@ window_set_cursor(cr_none)
 //shader
 application_surface_draw_enable(true)
 global.sunset = false
+
+//battle
+global.battle = false
