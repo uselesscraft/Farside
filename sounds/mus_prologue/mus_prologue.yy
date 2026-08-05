@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_prologue",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":10,
+  "conversionMode":0,
+  "duration":5.5902042,
+  "exportDir":"",
+  "name":"mus_prologue",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_prologue.mp3",
+  "volume":1.0,
+}

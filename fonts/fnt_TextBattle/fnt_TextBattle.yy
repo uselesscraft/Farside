@@ -95,8 +95,8 @@
   "maintainGms1Font":false,
   "name":"fnt_TextBattle",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"Battle",
+    "path":"folders/Fonts/Battle.yy",
   },
   "pointRounding":0,
   "ranges":[

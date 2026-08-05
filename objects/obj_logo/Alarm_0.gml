@@ -1,0 +1,1 @@
+cangotoroom = true

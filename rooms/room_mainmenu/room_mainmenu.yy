@@ -6,20 +6,17 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_1C46A7BB","path":"rooms/room_mainmenu/room_mainmenu.yy",},
-    {"name":"inst_6A84A545","path":"rooms/room_mainmenu/room_mainmenu.yy",},
     {"name":"inst_1D232C37","path":"rooms/room_mainmenu/room_mainmenu.yy",},
     {"name":"inst_76259A3C","path":"rooms/room_mainmenu/room_mainmenu.yy",},
     {"name":"inst_61683F2F","path":"rooms/room_mainmenu/room_mainmenu.yy",},
     {"name":"inst_73458E08","path":"rooms/room_mainmenu/room_mainmenu.yy",},
     {"name":"inst_7051B815","path":"rooms/room_mainmenu/room_mainmenu.yy",},
     {"name":"inst_2E4530D2","path":"rooms/room_mainmenu/room_mainmenu.yy",},
+    {"name":"inst_64433923","path":"rooms/room_mainmenu/room_mainmenu.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"MainStuff","depth":0,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_1C46A7BB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C46A7BB","objectId":{"name":"obj_tofullscreen","path":"objects/obj_tofullscreen/obj_tofullscreen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":620.0,"y":340.0,},
-        {"$GMRInstance":"v4","%Name":"inst_6A84A545","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A84A545","objectId":{"name":"obj_persistent","path":"objects/obj_persistent/obj_persistent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":340.0,},
         {"$GMRInstance":"v4","%Name":"inst_1D232C37","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D232C37","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"MainStuff","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
@@ -32,10 +29,13 @@
     {"$GMRAssetLayer":"","%Name":"Farside","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_319FF5D5","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_319FF5D5","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.75,"scaleY":0.75,"spriteId":{"name":"spr_farside","path":"sprites/spr_farside/spr_farside.yy",},"x":160.0,"y":38.0,},
       ],"depth":200,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Farside","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":6.0,"animationSpeedType":0,"colour":4293585642,"depth":300,"effectEnabled":true,"effectType":"_filter_zoom_blur","gridX":20,"gridY":20,"hierarchyFrozen":false,"hspeed":0.2,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
+    {"$GMRInstanceLayer":"","%Name":"Fade","depth":300,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_64433923","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64433923","objectId":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":40.0,"y":0.0,},
+      ],"layers":[],"name":"Fade","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":6.0,"animationSpeedType":0,"colour":4293256677,"depth":400,"effectEnabled":true,"effectType":"_filter_zoom_blur","gridX":20,"gridY":20,"hierarchyFrozen":false,"hspeed":0.2,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
         {"name":"g_ZoomBlurCenter","type":0,"value":"0.5",},
         {"name":"g_ZoomBlurCenter","type":0,"value":"0.5",},
-        {"name":"g_ZoomBlurIntensity","type":0,"value":"0.015",},
+        {"name":"g_ZoomBlurIntensity","type":0,"value":"0.02",},
         {"name":"g_ZoomBlurFocusRadius","type":0,"value":"0",},
         {"name":"g_ZoomBlurTexture","type":2,"value":"_filter_zoom_blur_noise",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_menubg","path":"sprites/spr_menubg/spr_menubg.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},

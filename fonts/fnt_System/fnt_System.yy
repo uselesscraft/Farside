@@ -308,8 +308,8 @@
   "maintainGms1Font":false,
   "name":"fnt_System",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"Textbox",
+    "path":"folders/Fonts/Textbox.yy",
   },
   "pointRounding":0,
   "ranges":[

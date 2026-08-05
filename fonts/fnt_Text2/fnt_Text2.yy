@@ -95,8 +95,8 @@
   "maintainGms1Font":false,
   "name":"fnt_Text2",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"Textbox",
+    "path":"folders/Fonts/Textbox.yy",
   },
   "pointRounding":0,
   "ranges":[
