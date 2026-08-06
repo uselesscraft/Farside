@@ -17,6 +17,9 @@ global.climbing = false
 cursor_sprite = spr_mouse
 window_set_cursor(cr_none)
 
+//debug???
+global.inide = true //stands for in ide djisfadafgh
+
 //shader
 application_surface_draw_enable(true)
 global.sunset = false

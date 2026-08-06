@@ -3,8 +3,8 @@
   "%Name":"shd_dark",
   "name":"shd_dark",
   "parent":{
-    "name":"zelda",
-    "path":"zelda.yyp",
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

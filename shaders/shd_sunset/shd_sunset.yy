@@ -3,8 +3,8 @@
   "%Name":"shd_sunset",
   "name":"shd_sunset",
   "parent":{
-    "name":"zelda",
-    "path":"zelda.yyp",
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",
