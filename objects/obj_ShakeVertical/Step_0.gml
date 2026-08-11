@@ -7,11 +7,13 @@ if (shake > 0) {
     valY = shake * shakeMult
 
     with (obj) {
-        y = y + other.valY
+        y = other.objy + other.valY
     }
 
     shake -= shakeDec
 
 } else {
     instance_destroy()
+	
+	obj.y = objy
 }
