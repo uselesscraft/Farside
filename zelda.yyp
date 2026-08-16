@@ -228,6 +228,7 @@
     {"id":{"name":"spr_FrogEvil","path":"sprites/spr_FrogEvil/spr_FrogEvil.yy",},},
     {"id":{"name":"spr_FrogEvilAtk","path":"sprites/spr_FrogEvilAtk/spr_FrogEvilAtk.yy",},},
     {"id":{"name":"spr_FrogNpc","path":"sprites/spr_FrogNpc/spr_FrogNpc.yy",},},
+    {"id":{"name":"spr_FrogNpcTalk","path":"sprites/spr_FrogNpcTalk/spr_FrogNpcTalk.yy",},},
     {"id":{"name":"spr_Grass","path":"sprites/spr_Grass/spr_Grass.yy",},},
     {"id":{"name":"spr_house","path":"sprites/spr_house/spr_house.yy",},},
     {"id":{"name":"spr_hp","path":"sprites/spr_hp/spr_hp.yy",},},

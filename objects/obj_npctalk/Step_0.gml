@@ -11,7 +11,8 @@ if ((keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0,
 }
 
 if (!instance_exists(obj_Textbox)) {
-	sprite_index = sprite
+	sprite_index = spritenormal
+	image_speed = 1
 }
 
 if (global.talking) {
@@ -22,7 +23,7 @@ if (global.talking) {
 			image_speed = array_contains(animatepage, obj_Textbox.page) ? imgspd : 0
 		}
 	}
-} else {
+} else if (instance_exists(obj_Textbox)) {
 	image_speed = 0
 	image_index = 0
 }

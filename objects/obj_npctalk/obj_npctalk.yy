@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_FrogNpc",
-    "path":"sprites/spr_FrogNpc/spr_FrogNpc.yy",
+    "name":"spr_FrogNpcTalk",
+    "path":"sprites/spr_FrogNpcTalk/spr_FrogNpcTalk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

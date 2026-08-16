@@ -1,9 +1,11 @@
-sprite = spr_FrogNpc
+sprite = spr_FrogNpcTalk
 
 rsprite = sprite
 lsprite = sprite
 usprite = sprite
 dsprite = sprite
+
+spritenormal = spr_FrogNpc
 
 range = 42
 
