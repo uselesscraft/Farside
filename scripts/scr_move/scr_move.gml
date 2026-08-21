@@ -14,3 +14,4 @@ function moveto(targetx, targety, spd) {
 	    vspeed = lengthdir_y(spd, dir)
 	}
 }
+

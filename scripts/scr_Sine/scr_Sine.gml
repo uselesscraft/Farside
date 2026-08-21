@@ -8,3 +8,4 @@ function sine(value, freq, ampl) {
 	
 	return value + math
 }
+

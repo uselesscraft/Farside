@@ -38,7 +38,7 @@
   ],
   "name":"spr_eliasbattleidle",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Battle",
     "path":"folders/Sprites/Characters/Elias/Battle.yy",
@@ -95,7 +95,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":18,
+    "xorigin":20,
     "yorigin":29,
   },
   "swatchColours":null,

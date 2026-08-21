@@ -9,3 +9,4 @@ function encounter(_enemies, _bg, _bgsky) {
 		{ enemies: _enemies, creator: id, battlebackground: _bg, battlesky: _bgsky}
 	)
 }
+
