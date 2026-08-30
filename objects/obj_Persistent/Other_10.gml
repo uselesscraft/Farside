@@ -12,7 +12,7 @@ global.mypartydata =
 		name: "Elias",
 		hp: 20,
 		hpmax: 20,
-		attack: 10,
+		attack: 5,
 		defense: 10,
 		mw: 10,
 		spd: 10,
@@ -25,21 +25,21 @@ global.mypartydata =
 	,
 	{
 		name: "Abbigail",
-		hp: 25,
-		hpmax: 25,
+		hp: 20,
+		hpmax: 20,
 		attack: 5,
-		defense: 5,
+		defense: 10,
 		mw: 10,
-		spd: 20,
+		spd: 10,
 		xp: 0,
 		lv: 1,
-		_id: 1,
-		sprites : { idle: spr_abbybattle },
+		_id: 0,
+		sprites : { idle: spr_abbybattle, attack: spr_eliasbattleatk, hit: spr_eliasbattleguard, generic: spr_eliasbattlegen },
 		actions : [] //info: to be filled in the future
 	}
 	,
 	{
-		name: "Abbigail",
+		name: "Daan",
 		hp: 25,
 		hpmax: 25,
 		attack: 5,
@@ -49,7 +49,7 @@ global.mypartydata =
 		xp: 0,
 		lv: 1,
 		_id: 1,
-		sprites : { idle: spr_abbybattle },
+		sprites : { idle: spr_papyrusd },
 		actions : [] //info: to be filled in the future
 	}
 ]

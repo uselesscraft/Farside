@@ -44,8 +44,8 @@ draw_text(x + hpcolumn, y + 144, "HP:")
 draw_text(x + mwcolumn, y + 144, "MIND WAVE:")
 
 draw_sprite(spr_line, 0, x + namecolumn + 53, y + 140)
-draw_sprite(spr_line, 0, x + hpcolumn + 43, y + 140)
-draw_sprite(spr_line, 0, x + mwcolumn + 63, y + 140)
+draw_sprite(spr_line, 0, x + hpcolumn + 44, y + 140)
+draw_sprite(spr_line, 0, x + mwcolumn + 62, y + 140)
 
 //enemy
 for (var i = 0; i < array_length(enemyunits); i++) {
@@ -75,7 +75,7 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	var chara = global.mypartydata[i]
 	
 	//NAMES
-	if (chara._id == global.currentmember) { draw_set_colour(make_colour_rgb(255, 255, 185)) }
+	if (i == global.currentmember) { draw_set_colour(make_colour_rgb(255, 255, 185)) }
 	if (chara.hp <= 0) { draw_set_colour(c_dkgray) }
 	draw_text(x + namecolumn, y + 153 + i * 9, chara.name)
 	
@@ -83,7 +83,7 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	draw_set_font(fnt_TextBattle2)
 	
 	var imgindex = 0
-	if (chara._id == global.currentmember) { imgindex = 1 }
+	if (i == global.currentmember) { imgindex = 1 }
 	
 	draw_sprite(spr_hp, imgindex, x + hpcolumn + 1, y + 153 + i * 9)
 	draw_set_colour(c_black)

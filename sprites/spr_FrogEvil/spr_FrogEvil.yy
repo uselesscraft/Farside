@@ -24,7 +24,7 @@
   ],
   "name":"spr_FrogEvil",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"NPCs",
     "path":"folders/Sprites/Characters/NPCs.yy",
@@ -79,7 +79,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":29,
     "yorigin":0,
   },
   "swatchColours":null,

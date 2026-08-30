@@ -22,7 +22,12 @@ currentuser = noone
 currentaction = -1
 currenttargets = noone
 
+timer = 0
+timerdelay = 5
+
 //make party
+partyunits = array_create(3, noone)
+
 partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitpc, global.mypartydata[global.currentmember])
 array_push(units, partyunits[global.currentmember])
 
@@ -41,18 +46,7 @@ instance_activate_object(obj_arrow)
 
 bgx = 0
 
-//render order
-function refreshrenderorder() {
-	unitrenderorder = []
-	
-	array_copy(unitrenderorder, 0, units, 0, array_length(units))
-	array_sort(unitrenderorder, function(_1, _2) {
-		return _1.y - _2. y
-	})
-}
-
-refreshrenderorder()
-
+//states
 function selectaction() {
 	var _unit = units[turn]
 	
@@ -138,3 +132,43 @@ function turnprogress() {
 }
 
 battlestate = selectaction
+
+//render order
+function refreshrenderorder() {
+	unitrenderorder = []
+	
+	for (var i = 0; i < array_length(units); i++) {
+		var unit = units[i]
+		
+		if (instance_exists(unit)) {
+			array_push(unitrenderorder, unit)
+		}
+	}
+	
+	array_sort(unitrenderorder, function(_1, _2) {
+		return _1.y - _2.y
+	})
+}
+
+refreshrenderorder()
+
+//switch between members
+function switchmember(_nextmember) {
+	var oldunit = partyunits[global.currentmember]
+
+	if (instance_exists(oldunit)) {
+		instance_deactivate_object(oldunit)
+	}
+	
+	global.currentmember = _nextmember
+	
+	if (!instance_exists(partyunits[global.currentmember])) {
+		partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitpc, global.mypartydata[global.currentmember])
+		array_push(units, partyunits[global.currentmember])
+	}	
+	
+	instance_activate_object(partyunits[global.currentmember])
+	
+	refreshrenderorder()
+}
+
