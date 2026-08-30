@@ -31,8 +31,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Skys",
-    "path":"folders/Sprites/Battle/Backgrounds/Skys.yy",
+    "name":"Skies",
+    "path":"folders/Sprites/Battle/Backgrounds/Skies.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

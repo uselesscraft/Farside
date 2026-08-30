@@ -12,14 +12,17 @@ for (var i = 0; i < array_length(partyunits); i++) {
 		
 		if (timer <= 0) {
 			timer = timerdelay
+			audio_sound_pitch(snd_Move, 1)
 			
 			//hp
 			if (currenthp > targethp) {
 				currenthp--
-				audio_play_sound(snd_Text2, 10, false)
+				audio_play_sound(snd_Move, 10, false)
+				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
 			} else if (currenthp < targethp) {
 				currenthp++
-				audio_play_sound(snd_Text2, 10, false)
+				audio_play_sound(snd_Move, 10, false)
+				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
 			}
 			
 			//mw
@@ -27,10 +30,12 @@ for (var i = 0; i < array_length(partyunits); i++) {
 			
 			if (currentmw > targetmw) {
 				currentmw--
-				audio_play_sound(snd_Text2, 10, false)
+				audio_play_sound(snd_Move, 10, false)
+				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
 			} else if (currentmw < targetmw) {
 				currentmw++
-				audio_play_sound(snd_Text2, 10, false)
+				audio_play_sound(snd_Move, 10, false)
+				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
 			}
 			
 			global.mypartydata[i].mw = currentmw
