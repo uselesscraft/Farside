@@ -34,7 +34,7 @@
         {"$GMImageLayer":"","%Name":"2b51cf02-6af2-460a-a1d3-a5be7b8414c9","blendMode":0,"displayName":"LArm","isLocked":false,"name":"2b51cf02-6af2-460a-a1d3-a5be7b8414c9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
       ],"name":"51442096-c0a4-4eef-a655-8b79ba7af5cc","opacity":100.0,"resourceType":"GMImageFolderLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","blendMode":0,"displayName":"Torso","isLocked":false,"name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","blendMode":0,"displayName":"Stuff","isLocked":false,"name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","blendMode":0,"displayName":"Stuff","isLocked":false,"name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"spr_eliasbattleidle_2",
   "nineSlice":null,

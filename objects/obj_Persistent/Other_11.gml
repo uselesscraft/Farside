@@ -6,7 +6,7 @@ global.enemies =
 		name: "Evil Frog",
 		hp: 30,
 		hpmax: 30,
-		damage: 5,
+		attack: 5,
 		defense: 1,
 		xp: 5,
 		sprites : { idle: spr_FrogEvil },

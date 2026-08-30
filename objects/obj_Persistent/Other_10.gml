@@ -19,7 +19,7 @@ global.mypartydata =
 		xp: 0,
 		lv: 1,
 		_id: 0,
-		sprites : { idle: spr_eliasbattleidle },
+		sprites : { idle: spr_eliasbattleidle, attack: spr_eliasbattleatk, hit: spr_eliasbattleguard, generic: spr_eliasbattlegen },
 		actions : [] //info: to be filled in the future
 	}
 	,
