@@ -1,4 +1,17 @@
-x = -320
-y = 60
+cam = view_camera[0]
+camx = camera_get_view_x(cam)
+camy = camera_get_view_y(cam)
+
+x = camx + -320
+y = camy + 60
+
+_x = 0
+_y = 0
 
 i_am_there = false
+
+
+image_xscale = 8
+image_yscale = 4
+
+depth = -99999

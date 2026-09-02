@@ -69,6 +69,7 @@ function beginaction(_user, _action, _targets) {
 	
 	with (_user) {
 		acting = true
+		actiondone = false
 		
 		if (!is_undefined(_action.animation) and !is_undefined(_user.sprites[$ _action.animation])) {
 			sprite_index = sprites[$ _action.animation]
@@ -79,8 +80,17 @@ function beginaction(_user, _action, _targets) {
 	}
 }
 
-function performaction() {
+function performaction(_waitanimend = false) {
+	if (global.currentmember == 1) {
+		_waitanimend = true
+	}
+	
 	if (currentuser.acting) {
+		if (!_waitanimend and !currentuser.actiondone) {
+			currentaction.func(currentuser, currenttargets)
+			currentuser.actiondone = true
+		}
+		
 		if (currentuser.image_index >= currentuser.image_number - 1) {
 			with (currentuser) {
 				sprite_index = sprites.idle
@@ -88,7 +98,10 @@ function performaction() {
 				acting = false
 			}
 			
-			currentaction.func(currentuser, currenttargets)
+			if (_waitanimend and !currentuser.actiondone) {
+				currentaction.func(currentuser, currenttargets)
+				currentuser.actiondone = true
+			}
 		}
 		
 		if (variable_struct_exists(currentaction, "effectsprite")) {
@@ -97,7 +110,7 @@ function performaction() {
 					instance_create_depth(currenttargets[i].x, currenttargets[i].y, currenttargets[i].depth - 1, obj_battleeffect, {sprite_index : currentaction.effectsprite})
 				}
 			} else {
-				var _effectsprite = currentaction._effectsprite
+				var _effectsprite = currentaction.effectsprite
 				
 				if (variable_struct_exists(currentaction, "effectspritenotarget")) { _effectsprite = currentaction.effectspritenotarget }
 				instance_create_depth(x, y, depth - 100, obj_battleeffect, {sprite_index : _effectsprite})

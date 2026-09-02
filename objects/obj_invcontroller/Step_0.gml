@@ -1,6 +1,6 @@
 /// @description lerps
 // You can write your code in this editor
-if (keyboard_check_pressed(vk_control) == true or gamepad_button_check_pressed(0, gp_start) == true) {
+if (optionkey()) {
 	i_am_there = !i_am_there
 	obj_mainchara.canMove = !obj_mainchara.canMove
 	
@@ -8,7 +8,13 @@ if (keyboard_check_pressed(vk_control) == true or gamepad_button_check_pressed(0
 }
 
 if (i_am_there == true) {
-	x = lerp(x, 82, 0.2)
+	_x = lerp(_x, 82, 0.2)
 } else {
-	x = lerp(x, -320, 0.1)
+	_x = lerp(_x, -320, 0.1)
 }
+
+camx = camera_get_view_x(cam)
+camy = camera_get_view_y(cam)
+
+x = camx + _x
+y = camy + 60

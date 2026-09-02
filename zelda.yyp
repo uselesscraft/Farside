@@ -129,6 +129,7 @@
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"obj_flagbird","path":"objects/obj_flagbird/obj_flagbird.yy",},},
     {"id":{"name":"obj_FlagNews","path":"objects/obj_FlagNews/obj_FlagNews.yy",},},
+    {"id":{"name":"obj_floattext","path":"objects/obj_floattext/obj_floattext.yy",},},
     {"id":{"name":"obj_invcontroller","path":"objects/obj_invcontroller/obj_invcontroller.yy",},},
     {"id":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},},
     {"id":{"name":"obj_ladderbegin","path":"objects/obj_ladderbegin/obj_ladderbegin.yy",},},

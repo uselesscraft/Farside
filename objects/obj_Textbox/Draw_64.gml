@@ -31,11 +31,11 @@ and current_chara != "?") {
 	if (is_array(entry)) {
 	    audio_stop_sound(entry[1])
 		audio_play_sound(entry[1], 10, false)
-		audio_sound_pitch(entry[1], random_range(1, 1.05))
+		audio_sound_pitch(entry[1], random_range(1, 1.025))
 	} else {
 	    audio_stop_sound(snd_Text)
 		audio_play_sound(snd_Text, 10, false)
-		audio_sound_pitch(snd_Text, random_range(1, 1.05))
+		audio_sound_pitch(snd_Text, random_range(1, 1.025))
 	}
 }
 

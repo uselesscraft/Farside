@@ -1,1 +1,1 @@
-draw_sprite(spr_shadow, 0, x, bbox_bottom)
+draw_sprite_ext(spr_shadow, 0, x, bbox_bottom, 1, 1, 0, c_white, image_alpha)
