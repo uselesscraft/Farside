@@ -8,9 +8,9 @@
   "bitDepth":1,
   "channelFormat":1,
   "compression":0,
-  "compressionQuality":4,
+  "compressionQuality":10,
   "conversionMode":0,
-  "duration":0.504,
+  "duration":0.49181405,
   "exportDir":"",
   "name":"snd_Text",
   "parent":{
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":48000,
+  "sampleRate":44100,
   "soundFile":"snd_Text.mp3",
   "volume":1.0,
 }

@@ -20,22 +20,33 @@ if (chara_count <= string_length(current_text)) {
 	global.talking = false
 }
 
-var new_count = floor(chara_count)
-
 var current_chara = string_char_at(current_text, chara_count)
 var next_chara = string_char_at(current_text, chara_count + 1)
 
-if (new_count > old_count and current_chara != " " and current_chara != "."
-and current_chara != ")" and current_chara != "("  and current_chara != "!"
-and current_chara != "?") {
+var old = floor(old_count)
+var _new = floor(chara_count)
+
+var dosound = false
+
+while (old < _new) {
+	old++ 
+	
+	var charaevil = string_char_at(current_text, floor(old))
+	
+	if (charaevil != " " and charaevil != "#") {
+		dosound = true
+	}
+}
+
+if (dosound) {
 	if (is_array(entry)) {
 	    audio_stop_sound(entry[1])
 		audio_play_sound(entry[1], 10, false)
-		audio_sound_pitch(entry[1], random_range(1, 1.025))
+		audio_sound_pitch(entry[1], random_range(1, 1.01))
 	} else {
 	    audio_stop_sound(snd_Text)
 		audio_play_sound(snd_Text, 10, false)
-		audio_sound_pitch(snd_Text, random_range(1, 1.025))
+		audio_sound_pitch(snd_Text, random_range(1, 1.01))
 	}
 }
 

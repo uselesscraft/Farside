@@ -21,9 +21,9 @@ var next_chara = string_char_at(text[page], chara_count + 1)
 if (new_count > old_count and current_chara != " " and current_chara != "."
 and current_chara != ")" and current_chara != "("  and current_chara != "!"
 and current_chara != "?") {
-	audio_stop_sound(snd_Text2)
+	//audio_stop_sound(snd_Text2)
 	audio_play_sound(snd_Text2, 10, false)
-	audio_sound_pitch(snd_Text2, random_range(1, 0.8))
+	audio_sound_pitch(snd_Text2, random_range(1, 0.95))
 	audio_sound_gain(snd_Text2, 0.5)
 }
 

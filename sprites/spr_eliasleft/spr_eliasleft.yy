@@ -26,7 +26,7 @@
   ],
   "name":"spr_eliasleft",
   "nineSlice":null,
-  "origin":9,
+  "origin":4,
   "parent":{
     "name":"Elias",
     "path":"folders/Sprites/Characters/Elias.yy",
@@ -89,7 +89,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":16,
+    "xorigin":18,
     "yorigin":29,
   },
   "swatchColours":null,

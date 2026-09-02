@@ -113,7 +113,7 @@ if (canMove and !global.climbing) {
 		
 		}
 		
-		bufferanim = 6
+		bufferanim = 0
 	}
 	
 	depth = -bbox_bottom
