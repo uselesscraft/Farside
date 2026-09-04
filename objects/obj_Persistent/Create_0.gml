@@ -3,9 +3,13 @@
 
 //set up
 randomise()
+
 event_user(0)
 event_user(1)
+
 global.flags = array_create(100, false)
+
+global.threshold = 0.25
 
 //textbox
 global.talking = false

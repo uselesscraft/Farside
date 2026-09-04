@@ -9,6 +9,6 @@ xto = x
 yto = y
 
 //gradual movement
-move = false
+movecam = false
 spd = 2
 

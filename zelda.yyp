@@ -247,6 +247,7 @@
     {"id":{"name":"spr_menubg","path":"sprites/spr_menubg/spr_menubg.yy",},},
     {"id":{"name":"spr_mountains","path":"sprites/spr_mountains/spr_mountains.yy",},},
     {"id":{"name":"spr_mouse","path":"sprites/spr_mouse/spr_mouse.yy",},},
+    {"id":{"name":"spr_mousehighlight","path":"sprites/spr_mousehighlight/spr_mousehighlight.yy",},},
     {"id":{"name":"spr_napstablook","path":"sprites/spr_napstablook/spr_napstablook.yy",},},
     {"id":{"name":"spr_nothing","path":"sprites/spr_nothing/spr_nothing.yy",},},
     {"id":{"name":"spr_paper","path":"sprites/spr_paper/spr_paper.yy",},},

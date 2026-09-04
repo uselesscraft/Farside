@@ -7,7 +7,7 @@ if (follow != noone) {
 	yto = follow.y
 }
 
-if (move == true) {
+if (movecam == true) {
 	var dir = point_direction(x, y, xto, yto) 
 	var dist = point_distance(x, y, xto, yto)
 

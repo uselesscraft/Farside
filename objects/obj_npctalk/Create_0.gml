@@ -29,7 +29,7 @@ function faceplr() {
 	obj_Textbox.player_move = false 
 	obj_Textbox.player_stop_move = false
 	
-	obj_mainchara.canMove = false
+	obj_mainchara.canmove = false
 	
 	var dx = obj_mainchara.x - x
 	var dy = obj_mainchara.y - y
@@ -49,7 +49,7 @@ function faceplr() {
 	}
 	
 	obj_camera.follow = self
-	obj_camera.move = true
+	obj_camera.movecam = true
 }
 
 cometrigger = false

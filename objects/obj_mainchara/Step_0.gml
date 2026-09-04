@@ -1,8 +1,8 @@
-if (canMove and !global.climbing) {
-	var rightKey = keyboard_check(ord("D")) or gamepad_axis_value(0, gp_axislh) > threshold
-	var leftKey = keyboard_check(ord("A")) or gamepad_axis_value(0, gp_axislh) < -threshold
-	var upKey = keyboard_check(ord("W")) or gamepad_axis_value(0, gp_axislv) < -threshold
-	var downKey = keyboard_check(ord("S")) or gamepad_axis_value(0, gp_axislv) > threshold
+if (canmove and !global.climbing) {
+	var upKey = move(MOVE_FUNCTION.UP)
+	var downKey = move(MOVE_FUNCTION.DOWN)
+	var leftKey = move(MOVE_FUNCTION.LEFT)
+	var rightKey = move(MOVE_FUNCTION.RIGHT)
 	
 	var sprint_key = keyboard_check(vk_shift) or gamepad_button_check(0, gp_face1)
 	

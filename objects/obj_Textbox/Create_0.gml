@@ -35,7 +35,7 @@ player_move = true
 player_stop_move = true
 
 if (player_stop_move == true) {
-	obj_mainchara.canMove = false
+	obj_mainchara.canmove = false
 }
 
 dosound = false

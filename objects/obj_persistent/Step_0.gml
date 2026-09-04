@@ -10,3 +10,8 @@ if (surface_get_width(application_surface) != window_get_width() || surface_get_
 	}
 }
 
+if (mouse_check_button(mb_left) or mouse_check_button(mb_right) or mouse_check_button(mb_middle)) {
+	cursor_sprite = spr_mousehighlight
+} else {
+	cursor_sprite = spr_mouse
+}

@@ -37,12 +37,14 @@ for (var i = 0; i < array_length(enemies); i++) {
 	array_push(units, enemyunits[i])
 }
 
-//backgrounds
+//activate stuff
 instance_create_depth(x, y, depth - 1, obj_curtain)
 instance_activate_object(obj_curtain)
 
 instance_create_depth(x, y, depth - 1, obj_arrow)
 instance_activate_object(obj_arrow)
+
+instance_activate_object(obj_persistent)
 
 bgx = 0
 

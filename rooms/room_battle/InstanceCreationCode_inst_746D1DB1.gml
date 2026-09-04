@@ -1,1 +1,1 @@
-canMove = false
+canmove = false

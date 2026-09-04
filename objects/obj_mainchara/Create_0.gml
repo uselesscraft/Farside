@@ -1,7 +1,7 @@
 xSpd = 0
 ySpd = 0
 
-canMove = true
+canmove = true
 
 MoveSpeed = 3
 max_speed = 4
@@ -18,7 +18,6 @@ spriteLeft = spr_eliasleft
 spriteUp = spr_eliasup
 spriteDown = spr_eliasdown
 
-threshold = 0.25
 direction = 270
 
 colliding = false

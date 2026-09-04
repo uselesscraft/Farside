@@ -6,12 +6,13 @@ x = camx + -320
 y = camy + 60
 
 _x = 0
-_y = 0
 
-i_am_there = false
+reachedpoint = false
 
+ohwow = false
 
 image_xscale = 8
 image_yscale = 4
 
 depth = -99999
+visible = false

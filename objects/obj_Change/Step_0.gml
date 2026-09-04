@@ -7,7 +7,7 @@ if (room != next_room and back) {
 	obj_mainchara.x = next_x
 	obj_mainchara.y = next_y
 	
-	obj_mainchara.canMove = true
+	obj_mainchara.canmove = true
 } else if (room == next_room and delete_obj) {
 	instance_destroy()
 }

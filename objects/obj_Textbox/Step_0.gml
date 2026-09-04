@@ -29,7 +29,7 @@ if (closing == false) {
 		y = default_y
 		
 		if (instance_exists(obj_mainchara) == true and player_move == true) {
-			obj_mainchara.canMove = true
+			obj_mainchara.canmove = true
 		}
 		
 		instance_destroy()
