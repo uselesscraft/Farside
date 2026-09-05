@@ -45,6 +45,7 @@ instance_create_depth(x, y, depth - 1, obj_arrow)
 instance_activate_object(obj_arrow)
 
 instance_activate_object(obj_persistent)
+instance_activate_object(obj_tofullscreen)
 
 bgx = 0
 
