@@ -7,6 +7,8 @@ randomise()
 event_user(0)
 event_user(1)
 
+gml_release_mode(true)
+
 global.flags = array_create(100, false)
 
 global.threshold = 0.25
