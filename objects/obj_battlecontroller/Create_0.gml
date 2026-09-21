@@ -28,7 +28,7 @@ timerdelay = 5
 //make party
 partyunits = array_create(3, noone)
 
-partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitpc, global.mypartydata[global.currentmember])
+partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitplayer, global.mypartydata[global.currentmember])
 array_push(units, partyunits[global.currentmember])
 
 //make enemies
@@ -45,7 +45,6 @@ instance_create_depth(x, y, depth - 1, obj_arrow)
 instance_activate_object(obj_arrow)
 
 instance_activate_object(obj_persistent)
-instance_activate_object(obj_tofullscreen)
 
 bgx = 0
 
@@ -58,7 +57,23 @@ function selectaction() {
 		exit
 	}
 	
-	beginaction(_unit, global.actionlibrary.attack, _unit)
+	//beginaction(_unit, global.actionlibrary.attack, _unit)
+	
+	if (_unit.object_index == obj_battleunitplayer) { //if current unit is part of the team
+		var action = global.actionlibrary.attack
+			
+		var alltargets = array_filter(enemyunits, function(_unit, _index)
+		{
+			return instance_exists(_unit) and (_unit.hp > 0) //if hp is higher than 0, it returns true. otherwise, it returns false
+		})
+		var target = alltargets[irandom(array_length(alltargets) - 1)]
+		
+		beginaction(_unit.id, action, target)
+		
+	} else { //EVIL MONSTER
+		var evilaction = _unit.execute()
+		if (evilaction != 1) { beginaction(_unit.id, evilaction[0], evilaction[1]) }
+	}
 }
 
 function beginaction(_user, _action, _targets) {
@@ -179,7 +194,7 @@ function switchmember(_nextmember) {
 	global.currentmember = _nextmember
 	
 	if (!instance_exists(partyunits[global.currentmember])) {
-		partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitpc, global.mypartydata[global.currentmember])
+		partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitplayer, global.mypartydata[global.currentmember])
 		array_push(units, partyunits[global.currentmember])
 	}	
 	

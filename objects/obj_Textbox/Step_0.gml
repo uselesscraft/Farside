@@ -2,7 +2,15 @@
 // You can write your code in this editor
 
 var current = text[page]
-var current_text = is_array(current) ? current[0] : current
+var current_text = is_array(current) ? current[0] : current //explanation for dumb future me:
+//var current is the line. example:
+//haha[
+//    ["wow", snd_stupid] <- this is current
+//]
+
+//haha["wow" <- this is also current]
+
+//i set the current text to the first element of the var current array IF it is an array. other wise, just set it to current.
 
 if (keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0, gp_face2) == true) {
 	if (chara_count > string_length(current_text)) {
@@ -15,7 +23,9 @@ if (keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0, 
 		}
 	}
 } else if (keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_face1) == true) {
-	chara_count = string_length(current_text)
+	if  (string_pos("/n", current) <= 0) {
+		chara_count = string_length(current_text)
+	}
 }
 
 if (closing == false) {

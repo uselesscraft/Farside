@@ -93,7 +93,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.100.0.1142",
+    "IDEVersion":"2026.100.0.1149",
   },
   "name":"zelda",
   "resources":[
@@ -108,7 +108,7 @@
     {"id":{"name":"obj_battleeffect","path":"objects/obj_battleeffect/obj_battleeffect.yy",},},
     {"id":{"name":"obj_battleunit","path":"objects/obj_battleunit/obj_battleunit.yy",},},
     {"id":{"name":"obj_battleunitenemy","path":"objects/obj_battleunitenemy/obj_battleunitenemy.yy",},},
-    {"id":{"name":"obj_battleunitpc","path":"objects/obj_battleunitpc/obj_battleunitpc.yy",},},
+    {"id":{"name":"obj_battleunitplayer","path":"objects/obj_battleunitplayer/obj_battleunitplayer.yy",},},
     {"id":{"name":"obj_bg","path":"objects/obj_bg/obj_bg.yy",},},
     {"id":{"name":"obj_Bird","path":"objects/obj_Bird/obj_Bird.yy",},},
     {"id":{"name":"obj_BirdNothing","path":"objects/obj_BirdNothing/obj_BirdNothing.yy",},},
@@ -178,6 +178,7 @@
     {"id":{"name":"scr_sine","path":"scripts/scr_sine/scr_sine.yy",},},
     {"id":{"name":"shd_dark","path":"shaders/shd_dark/shd_dark.yy",},},
     {"id":{"name":"shd_sunset","path":"shaders/shd_sunset/shd_sunset.yy",},},
+    {"id":{"name":"shd_white","path":"shaders/shd_white/shd_white.yy",},},
     {"id":{"name":"mus_battle","path":"sounds/mus_battle/mus_battle.yy",},},
     {"id":{"name":"mus_Duster","path":"sounds/mus_Duster/mus_Duster.yy",},},
     {"id":{"name":"mus_Forest","path":"sounds/mus_Forest/mus_Forest.yy",},},

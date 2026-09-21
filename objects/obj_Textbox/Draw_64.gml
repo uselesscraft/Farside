@@ -7,13 +7,17 @@ draw_set_valign(fa_top)
 
 draw_set_colour(c_white)
 
-var entry = text[page]
-var current_text = is_array(entry) ? entry[0] : entry
+var current = text[page]
+var current_text = is_array(current) ? current[0] : current
 
 var old_count = floor(chara_count)
 
 if (chara_count <= string_length(current_text)) {
 	chara_count += chara_speed
+	
+	while (string_char_at(current_text, floor(chara_count)) == "/") {
+		chara_count += 2
+	}
 	
 	global.talking = true
 } else {
@@ -39,14 +43,14 @@ while (old < _new) {
 }
 
 if (dosound) {
-	if (is_array(entry)) {
-	    audio_stop_sound(entry[1])
-		audio_play_sound(entry[1], 10, false)
-		audio_sound_pitch(entry[1], random_range(1, 1.01))
+	if (is_array(current)) {
+	    audio_stop_sound(current[1])
+		audio_play_sound(current[1], 10, false)
+		audio_sound_pitch(current[1], random_range(0.95, 1.05))
 	} else {
 	    audio_stop_sound(snd_Text)
 		audio_play_sound(snd_Text, 10, false)
-		audio_sound_pitch(snd_Text, random_range(1, 1.01))
+		audio_sound_pitch(snd_Text, random_range(0.95, 1.05))
 	}
 }
 
@@ -70,6 +74,9 @@ var yy = y + y_padding
 
 var word = ""
 
+var shakex = 0 
+var shakey = 0
+
 while (i <= string_length(t)) {
 
     var c = string_char_at(t, i)
@@ -81,6 +88,33 @@ while (i <= string_length(t)) {
         i++
         continue
     }
+	
+	if (c == "/") {
+		var tag = string_char_at(t, i + 1)
+		
+		switch (tag) {
+			case "y": draw_set_colour(make_colour_rgb(255, 255, 185)); break //color yellow!
+			case "w": draw_set_colour(c_white); break //white (nothing special...)
+				
+			case "S": //uppercase S. it starts the shake effect
+				shakex = random_range(-1, 1)
+				shakey = random_range(-1, 1)
+			break
+		
+			case "s": //lowercase s. stops shake
+				shakex = 0
+				shakey = 0
+			break
+		
+			case "n": //next line/page !! :D
+				page++
+				chara_count = 0
+				chara_speed = chara_default_speed
+			break	
+		}
+		
+		i++
+	}
 
     var fnt = (c == "(" or c == ")" or c == "-") ? fnt_System : fnt_Text
     draw_set_font(fnt)
@@ -93,7 +127,7 @@ while (i <= string_length(t)) {
 		line_bullet = false
     }
 	
-    draw_text(xx, yy, c)
+    draw_text(xx + shakex, yy + shakey, c)
     xx += cw;
 
     i++

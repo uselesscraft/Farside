@@ -22,7 +22,7 @@ text_height = 22
 
 x_padding = 15 * 2
 y_padding = 5 * 2
-lerp_value = 0.4
+lerp_value = 0.4  //set to 1 = no animation
 
 closing = false
 
