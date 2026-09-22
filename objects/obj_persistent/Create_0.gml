@@ -16,6 +16,7 @@ global.threshold = 0.25
 //textbox
 global.talking = false
 global.textboxfinish = false
+global.globalsound = snd_Click
 
 //gameplay
 global.climbing = false

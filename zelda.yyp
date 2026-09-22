@@ -195,6 +195,7 @@
     {"id":{"name":"snd_Select","path":"sounds/snd_Select/snd_Select.yy",},},
     {"id":{"name":"snd_Text","path":"sounds/snd_Text/snd_Text.yy",},},
     {"id":{"name":"snd_Text2","path":"sounds/snd_Text2/snd_Text2.yy",},},
+    {"id":{"name":"snd_TextElias","path":"sounds/snd_TextElias/snd_TextElias.yy",},},
     {"id":{"name":"snd_TextPaps","path":"sounds/snd_TextPaps/snd_TextPaps.yy",},},
     {"id":{"name":"snd_txtabby","path":"sounds/snd_txtabby/snd_txtabby.yy",},},
     {"id":{"name":"snd_wind","path":"sounds/snd_wind/snd_wind.yy",},},

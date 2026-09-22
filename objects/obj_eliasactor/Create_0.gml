@@ -8,4 +8,9 @@ rsprite = spr_eliasright
 
 fun = false
 
+facing = 0
+
+sound = snd_TextElias
+talkanim = false
+
 npcdir = true

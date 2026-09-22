@@ -22,4 +22,23 @@ if (fun == false) {
 	if (npcdir == true) {
 		scr_npcdir()
 	}
+	
+	if (talkanim and !npcdir) {
+		if (global.globalsound == sound) {
+			var originalname = object_get_name(object_index)
+			var modifiedname = originalname + "-talking"
+			var talksprite = asset_get_index(modifiedname)
+			
+			if (talksprite != -1) {
+				sprite_index = talksprite
+			}
+			
+			if (global.talking) {
+				image_speed = 1
+			} else {
+				image_speed = 0
+				image_index = 0
+			}
+		}
+	}
 }

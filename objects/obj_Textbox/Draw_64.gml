@@ -47,10 +47,14 @@ if (dosound) {
 	    audio_stop_sound(current[1])
 		audio_play_sound(current[1], 10, false)
 		audio_sound_pitch(current[1], random_range(0.95, 1.05))
+		
+		global.globalsound = current[1]
 	} else {
 	    audio_stop_sound(snd_Text)
 		audio_play_sound(snd_Text, 10, false)
 		audio_sound_pitch(snd_Text, random_range(0.95, 1.05))
+		
+		global.globalsound = snd_Text
 	}
 }
 
