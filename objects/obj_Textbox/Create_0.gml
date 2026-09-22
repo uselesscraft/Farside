@@ -24,6 +24,8 @@ x_padding = 15 * 2
 y_padding = 5 * 2
 lerp_value = 0.4  //set to 1 = no animation
 
+animend = true
+
 closing = false
 
 depth = -1000

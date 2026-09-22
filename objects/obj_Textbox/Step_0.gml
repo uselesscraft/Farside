@@ -33,15 +33,19 @@ if (closing == false) {
 } else {
 	global.textboxfinish = true
 	
-	y = lerp(y, default_y, lerp_value)
+	if (animend) {
+		y = lerp(y, default_y, lerp_value)
 	
-	if (abs(y - default_y) < 0.1) {
-		y = default_y
-		
-		if (instance_exists(obj_mainchara) == true and player_move == true) {
-			obj_mainchara.canmove = true
+		if (abs(y - default_y) < 0.1) {
+			y = default_y
+			
+			if (instance_exists(obj_mainchara) == true and player_move == true) {
+				obj_mainchara.canmove = true
+			}
+			
+			instance_destroy()
 		}
-		
+	} else {
 		instance_destroy()
 	}
 }

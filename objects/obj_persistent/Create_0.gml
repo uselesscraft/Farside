@@ -20,6 +20,7 @@ global.globalsound = snd_Click
 
 //gameplay
 global.climbing = false
+global.playercontrol = true
 
 cursor_sprite = spr_mouse
 window_set_cursor(cr_none)

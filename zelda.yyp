@@ -121,6 +121,7 @@
     {"id":{"name":"obj_cloudspawner","path":"objects/obj_cloudspawner/obj_cloudspawner.yy",},},
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
     {"id":{"name":"obj_curtain","path":"objects/obj_curtain/obj_curtain.yy",},},
+    {"id":{"name":"obj_cutscenemanager","path":"objects/obj_cutscenemanager/obj_cutscenemanager.yy",},},
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},},
     {"id":{"name":"obj_eliasactor","path":"objects/obj_eliasactor/obj_eliasactor.yy",},},
     {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},},

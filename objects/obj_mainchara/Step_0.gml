@@ -161,3 +161,4 @@ if (canmove and !global.climbing) {
 }
 event_user(1)
 
+canmove = global.playercontrol
