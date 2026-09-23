@@ -16,7 +16,7 @@ if (currentstep >= array_length(scenearray)) {
 }
 
 var currentaction = scenearray[currentstep]
-var tag = currentaction[0]s
+var tag = currentaction[0]
 
 if (waiting != noone) {
 	if (waitcondition()) { //this is where it runs every single frame
