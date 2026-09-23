@@ -14,8 +14,6 @@ if (movecam == true) {
 	if (dist <= spd) {
 	    x = xto 
 	    y = yto
-		
-		movecam = false
 	}
 	else {
 	    x += lengthdir_x(spd, dir) 

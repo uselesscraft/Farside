@@ -38,7 +38,7 @@ switch (tag) {
 		var camspd = currentaction[3]
 		
 		obj_camera.movecam = true 
-		obj_camera.follow = false
+		obj_camera.follow = noone
 		obj_camera.xto = camx
 		obj_camera.yto = camy
 		obj_camera.spd = camspd
@@ -47,8 +47,7 @@ switch (tag) {
 		waiting = CUTSCENE.MOVE_CAMERA
 		
 		waitcondition = function() {
-			if (obj_camera.movecam == false) {
-				
+			if (obj_camera.x == obj_camera.xto and obj_camera.y == obj_camera.yto) {
 				return true
 			}
 			
@@ -117,18 +116,18 @@ switch (tag) {
 		break
 	
 	case CUTSCENE.SET_VARIABLE: // Sets a variable to something
-		var setvariable = currentaction[1]
-		var value = currentaction[2]
+		var instance = currentaction[1]
+		var variable = currentaction[2]
+		var value = currentaction[3]
 		
-		setvariable(value)
-		
+		variable_instance_set(instance.id, string(variable), value)
 		
 		currentstep++
 		
 		break
 	
 	case CUTSCENE.WAIT: // Waits
-		var time = currentaction[1]
+		time = currentaction[1]
 		
 		
 		waiting = CUTSCENE.WAIT

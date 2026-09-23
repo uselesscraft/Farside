@@ -5,6 +5,8 @@ if ((keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0,
 	var dirdiff = angle_difference(obj_mainchara.direction, dirnpc)
 	
 	if (abs(dirdiff) < 64 and !cometrigger) {
+		interacting = true
+		
 	    startdialogue()
 		faceplr()
 	}
@@ -32,7 +34,7 @@ if (global.textboxfinish) {
 	cometrigger = true
 }
 
-if (cometrigger) {
+if (cometrigger and interacting) {
 	obj_camera.follow = obj_mainchara
 	
 	if (obj_camera.x == obj_mainchara.x and obj_camera.y == obj_mainchara.y) {
@@ -40,6 +42,7 @@ if (cometrigger) {
 		obj_mainchara.canmove = true
 		
 		cometrigger = false
+		interacting = false
 	}
 }
 

@@ -17,6 +17,8 @@ cananimate = false
 
 imgspd = 1
 
+interacting = false
+
 shadow = true
 
 function startdialogue() {
