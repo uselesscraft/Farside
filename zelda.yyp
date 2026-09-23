@@ -261,6 +261,7 @@
     {"id":{"name":"spr_papyrusr","path":"sprites/spr_papyrusr/spr_papyrusr.yy",},},
     {"id":{"name":"spr_papyrusu","path":"sprites/spr_papyrusu/spr_papyrusu.yy",},},
     {"id":{"name":"spr_prologue","path":"sprites/spr_prologue/spr_prologue.yy",},},
+    {"id":{"name":"spr_question","path":"sprites/spr_question/spr_question.yy",},},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},},
     {"id":{"name":"spr_Target","path":"sprites/spr_Target/spr_Target.yy",},},
     {"id":{"name":"spr_Textbox","path":"sprites/spr_Textbox/spr_Textbox.yy",},},
