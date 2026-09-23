@@ -145,6 +145,28 @@ switch (tag) {
 		
 		break
 	
+	case CUTSCENE.RUN_CODE:
+		var onetimefunction = currentaction[1]
+		var runningfunction = currentaction[2]
+		var condition = currentaction[3]
+		
+		onetimefunction()
+		
+		
+		waiting = CUTSCENE.RUN_CODE
+		
+		waitcondition = function() {
+			runningfunction()
+			
+			if (condition()) {
+				return true
+			}
+			
+			return false
+		}
+		
+		break
+	
 	default:
 		show_message("YOU'RE STUPID, " + string(tag) + " DOESN'T EXIST YOU DUMBNUT!!")
 		
