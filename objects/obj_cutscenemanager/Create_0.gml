@@ -11,5 +11,8 @@ waitcondition = function() {
 enum CUTSCENE {
 	TEXT,
     MOVE_CAMERA,
-	MOVE_CHARACTER
+	MOVE_CHARACTER,
+	CHARACTER_SPRITE,
+	SET_VARIABLE,
+	WAIT
 }
