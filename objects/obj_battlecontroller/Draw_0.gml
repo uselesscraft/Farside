@@ -38,10 +38,10 @@ draw_set_valign(fa_top)
 
 draw_set_colour(c_dkgray)
 
-draw_text(x + enemycolumn, y + 134, "ENEMY:")
-draw_text(x + namecolumn, y + 144, "NAME:")
+draw_text(x + enemycolumn, y + 134, "FOES:")
+draw_text(x + namecolumn, y + 144, "MEMBERS:")
 draw_text(x + hpcolumn, y + 144, "HP:")
-draw_text(x + mwcolumn, y + 144, "MIND WAVE:")
+draw_text(x + mwcolumn, y + 144, "WAVE:")
 
 draw_sprite(spr_line, 0, x + namecolumn + 53, y + 140)
 draw_sprite(spr_line, 0, x + hpcolumn + 44, y + 140)
@@ -97,7 +97,7 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	
 	draw_text(x + hpcolumn - 3, y + 153 + i * 9, hp)
 	
-	//MIND WAVES
+	//WAVES
 	draw_set_font(fnt_TextBattle2)
 	draw_sprite(spr_hp, imgindex, x + mwcolumn + 1, y + 153 + i * 9)
 	draw_set_colour(c_black)

@@ -166,6 +166,18 @@ switch (tag) {
 		
 		break
 	
+	case CUTSCENE.NOTIF: // Sets a variable to something
+		var _txt = currentaction[1]
+		
+		if (!instance_exists(obj_notif)) {
+			var notif = instance_create_depth(0, 0, 0, obj_notif)
+			notif.text = _txt
+		}
+		
+		currentstep++
+		
+		break
+	
 	default:
 		show_message("YOU'RE STUPID, " + string(tag) + " DOESN'T EXIST YOU DUMBNUT!!")
 		

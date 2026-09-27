@@ -1,4 +1,5 @@
 var scenetree = [ 
+	[CUTSCENE.NOTIF, "Your story is changing."], //spawns the notification thingy (MCSM REFERENCE!!!!)
 	[CUTSCENE.SET_VARIABLE, obj_mainchara, "canmove", false], //freezes the player
 	[CUTSCENE.MOVE_CAMERA, 100, 100, 5], //moves the camera to x 100 y 100
 	[CUTSCENE.TEXT, text2, 1], //triggers textbox

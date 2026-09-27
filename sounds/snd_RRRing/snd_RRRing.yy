@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_BirdFly",
+  "%Name":"snd_RRRing",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.9549206,
+  "duration":2.4,
   "exportDir":"",
-  "name":"snd_BirdFly",
+  "name":"snd_RRRing",
   "parent":{
     "name":"SFX",
     "path":"folders/Sounds/SFX.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_BirdFly.wav",
+  "soundFile":"snd_RRRing.mp3",
   "volume":1.0,
 }
