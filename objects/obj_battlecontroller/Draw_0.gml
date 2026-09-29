@@ -27,8 +27,8 @@ draw_sprite_stretched(spr_box, 0, x, y + 130, 74, 50)
 //positions
 var enemycolumn = 25
 var namecolumn = 90
-var hpcolumn = 160
-var mwcolumn = 220
+var hpcolumn = 170
+var mwcolumn = 240
 
 //draw section
 draw_set_font(fnt_TextBattle)
@@ -38,14 +38,14 @@ draw_set_valign(fa_top)
 
 draw_set_colour(c_dkgray)
 
-draw_text(x + enemycolumn, y + 134, "FOES:")
-draw_text(x + namecolumn, y + 144, "MEMBERS:")
+draw_text(x + enemycolumn, y + 134, "ENEMIES:")
+draw_text(x + namecolumn, y + 144, "PARTY:")
 draw_text(x + hpcolumn, y + 144, "HP:")
 draw_text(x + mwcolumn, y + 144, "WAVE:")
 
-draw_sprite(spr_line, 0, x + namecolumn + 53, y + 140)
-draw_sprite(spr_line, 0, x + hpcolumn + 44, y + 140)
-draw_sprite(spr_line, 0, x + mwcolumn + 62, y + 140)
+draw_sprite(spr_line, 0, x + namecolumn + 57, y + 140)
+draw_sprite(spr_line, 0, x + hpcolumn + 48, y + 140)
+//draw_sprite(spr_line, 0, x + mwcolumn + 62, y + 140)
 
 //enemy
 for (var i = 0; i < array_length(enemyunits); i++) {
