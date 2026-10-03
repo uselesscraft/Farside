@@ -24,11 +24,17 @@ global.playercontrol = true
 
 global.ignorekey = false
 
-cursor_sprite = spr_mouse
+//mouse
 window_set_cursor(cr_none)
+cursor_sprite = spr_mouse
+
+mouselastx = mouse_x
+mouselasty = mouse_y
+
+mousetimer = 60
 
 //debug???
-global.inide = true //stands for in ide djisfadafgh
+global.inide = true //stands for ide djisfadafgh
 
 //shader
 application_surface_draw_enable(true)

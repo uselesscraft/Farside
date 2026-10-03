@@ -33,10 +33,10 @@ depth = -1000
 x = default_x
 y = default_y
 
-player_move = true
-player_stop_move = true
+playerstartmove = true
+playerstopmove = true
 
-if (player_stop_move == true) {
+if (playerstopmove == true) {
 	global.playercontrol = false
 }
 

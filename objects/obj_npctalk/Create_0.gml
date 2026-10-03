@@ -28,10 +28,8 @@ function startdialogue() {
 }
 
 function faceplr() {
-	obj_Textbox.player_move = false 
-	obj_Textbox.player_stop_move = false
-	
-	global.playercontrol = false
+	obj_Textbox.playerstartmove = false 
+	obj_Textbox.playerstopmove = true
 	
 	var dx = obj_mainchara.x - x
 	var dy = obj_mainchara.y - y
@@ -52,6 +50,7 @@ function faceplr() {
 	
 	obj_camera.follow = self
 	obj_camera.movecam = true
+	obj_camera.spd = 2
 }
 
 cometrigger = false

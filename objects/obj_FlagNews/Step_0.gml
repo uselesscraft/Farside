@@ -11,8 +11,8 @@ if (trigger == true) {
 		
 		calltext(text, 0.5)
 	} else {
-		obj_Textbox.player_move = true
-		obj_Textbox.player_stop_move = true
+		obj_Textbox.playerstartmove = true
+		obj_Textbox.playerstopmove = true
 		
 		if (obj_Textbox.page >= 3) {
 			var heismoving = move_to(9, 8, obj_napstablook, 3)

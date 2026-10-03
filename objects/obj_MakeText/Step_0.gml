@@ -5,7 +5,7 @@ if ((keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0,
 	if (instance_exists(obj_Textbox) == false) {
 		calltext(text, 0.5)
 	} else {
-		obj_Textbox.player_move = true
-		obj_Textbox.player_stop_move = true
+		obj_Textbox.playerstartmove = true
+		obj_Textbox.playerstopmove = true
 	}
 }

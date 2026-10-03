@@ -9,8 +9,8 @@
   "name":"obj_tofullscreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"1  | Main Stuff",
-    "path":"folders/Objects/1  | Main Stuff.yy",
+    "name":"1 - Main Stuff",
+    "path":"folders/Objects/1 - Main Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":true,

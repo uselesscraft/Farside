@@ -39,7 +39,7 @@ if (closing == false) {
 		if (abs(y - default_y) < 0.1) {
 			y = default_y
 			
-			if (instance_exists(obj_mainchara) == true and player_move == true) {
+			if (instance_exists(obj_mainchara) == true and playerstartmove == true) {
 				global.playercontrol = true
 			}
 			

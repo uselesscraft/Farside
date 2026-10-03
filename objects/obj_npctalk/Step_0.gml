@@ -1,6 +1,6 @@
 var dist = point_distance(x, y, obj_mainchara.x, obj_mainchara.y)
 
-if ((keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0, gp_face2) == true) and dist < range and !instance_exists(obj_Textbox)) {	
+if ((interactkey()) and dist < range and !instance_exists(obj_Textbox)) {	
 	var dirnpc = point_direction(obj_mainchara.x, obj_mainchara.y, x, y)
 	var dirdiff = angle_difference(obj_mainchara.direction, dirnpc)
 	
@@ -30,7 +30,7 @@ if (global.talking) {
 	image_index = 0
 }
 
-if (global.textboxfinish) {
+if (global.textboxfinish and interacting) {
 	cometrigger = true
 }
 
@@ -44,7 +44,7 @@ if (cometrigger and interacting) {
 		cometrigger = false
 		interacting = false
 	}
-}
+} 
 
 depth = -bbox_bottom
 

@@ -172,8 +172,6 @@ switch (tag) {
 		if (!instance_exists(obj_notif)) {
 			var notif = instance_create_depth(0, 0, 0, obj_notif)
 			notif.text = _txt
-			
-			show_debug_message("B")
 		} else {
 			instance_destroy(obj_notif)
 		}

@@ -9,8 +9,8 @@
   "name":"obj_papyrusactor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Characters",
-    "path":"folders/Objects/Characters.yy",
+    "name":"2 - Characters",
+    "path":"folders/Objects/2 - Characters.yy",
   },
   "parentObjectId":{
     "name":"obj_collider",

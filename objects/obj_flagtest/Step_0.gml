@@ -1,6 +1,5 @@
 var scenetree = [ 
 	[CUTSCENE.NOTIF, "oh wow"], //spawns the notification thingy (MCSM REFERENCE)
-	[CUTSCENE.CHARACTER_SPRITE, obj_mainchara, spr_eliasbattleatk],
 	[CUTSCENE.SET_VARIABLE, obj_mainchara, "canmove", false], //freezes the player
 	[CUTSCENE.MOVE_CAMERA, 100, 100, 5], //moves the camera to x 100 y 100
 	[CUTSCENE.TEXT, text2, 1], //triggers textbox
@@ -15,9 +14,9 @@ var scenetree2 = [
 	[CUTSCENE.NOTIF, "wow"],
 	[CUTSCENE.WAIT, 10],
 	[CUTSCENE.SET_VARIABLE, obj_mainchara, "canmove", false],
-	[CUTSCENE.MOVE_CAMERA, 580, 100, 5],
+	[CUTSCENE.MOVE_CAMERA, 580, 100, 3],
 	[CUTSCENE.TEXT, text3, 1], 
-	[CUTSCENE.MOVE_CAMERA, obj_mainchara.x, obj_mainchara.y, 6],
+	[CUTSCENE.MOVE_CAMERA, obj_mainchara.x, obj_mainchara.y, 12],
 	[CUTSCENE.SET_VARIABLE, obj_camera, "follow", obj_mainchara],
 	[CUTSCENE.SET_VARIABLE, obj_mainchara, "canmove", true],
 ]

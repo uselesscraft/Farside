@@ -9,8 +9,8 @@
   "name":"obj_flagtest",
   "overriddenProperties":[],
   "parent":{
-    "name":"Events",
-    "path":"folders/Objects/Events.yy",
+    "name":"3 - Events",
+    "path":"folders/Objects/3 - Events.yy",
   },
   "parentObjectId":null,
   "persistent":false,
