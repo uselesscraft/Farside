@@ -1,4 +1,4 @@
-if (canmove and !global.climbing) {
+if ((global.playercontrol and canmove) and !global.climbing) {
 	var upKey = move(MOVE_FUNCTION.UP)
 	var downKey = move(MOVE_FUNCTION.DOWN)
 	var leftKey = move(MOVE_FUNCTION.LEFT)
@@ -11,8 +11,6 @@ if (canmove and !global.climbing) {
 	} else {
 		MoveSpeed = nor_speed
 	}
-	
-	//random line thingyaaa
 	
 	function priority(arg0) {
 		if (prio == -1) {
@@ -159,6 +157,5 @@ if (canmove and !global.climbing) {
 		if (heightclamp) { targetlerpy = clamp(targetlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
 	}
 }
-event_user(1)
 
-canmove = global.playercontrol
+event_user(1)

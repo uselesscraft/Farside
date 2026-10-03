@@ -5,15 +5,33 @@ enum MOVE_FUNCTION {
 	RIGHT
 }
 
-function interactkey(){
+function interactkey() {
+	if (global.ignorekey) {
+		global.ignorekey = false 
+		
+		return false
+	}
+	
 	return keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0, gp_face2)
 }
 
 function backkey() {
+	if (global.ignorekey) {
+		global.ignorekey = false 
+		
+		return false
+	}
+	
 	return keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_face1)
 }
 
 function optionkey() {
+	if (global.ignorekey) {
+		global.ignorekey = false 
+		
+		return false
+	}
+	
 	return keyboard_check_pressed(vk_control) or gamepad_button_check_pressed(0, gp_start)
 }
 

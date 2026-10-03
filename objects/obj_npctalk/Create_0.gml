@@ -31,7 +31,7 @@ function faceplr() {
 	obj_Textbox.player_move = false 
 	obj_Textbox.player_stop_move = false
 	
-	obj_mainchara.canmove = false
+	global.playercontrol = false
 	
 	var dx = obj_mainchara.x - x
 	var dy = obj_mainchara.y - y

@@ -13,7 +13,7 @@ x = camera_get_view_x(view_camera[0]) + sprite_width / 2 + offsetx
 y = camera_get_view_y(view_camera[0]) + sprite_height / 2 + 2.5
 
 if (length > sprite_get_width(sprite_index)) {
-	image_xscale = (length - 60) / sprite_get_width(sprite_index)
+	image_xscale = (length) / sprite_get_width(sprite_index)
 }
 
 draw_self()

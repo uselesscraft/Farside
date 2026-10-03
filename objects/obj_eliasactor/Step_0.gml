@@ -23,9 +23,9 @@ if (fun == false) {
 		scr_npcdir()
 	}
 	
-	if (talkanim and !npcdir) {
+	if (talkanim) {
 		if (global.globalsound == sound) {
-			var originalname = object_get_name(object_index)
+			var originalname = asset_get_index(sprite_index)
 			var modifiedname = originalname + "-talking"
 			var talksprite = asset_get_index(modifiedname)
 			

@@ -39,7 +39,7 @@ if (cometrigger and interacting) {
 	
 	if (obj_camera.x == obj_mainchara.x and obj_camera.y == obj_mainchara.y) {
 		obj_camera.movecam = false
-		obj_mainchara.canmove = true
+		global.playercontrol = true
 		
 		cometrigger = false
 		interacting = false

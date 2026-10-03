@@ -3,7 +3,7 @@
 
 if (optionkey() and reachedpoint) {
 	ohwow = !ohwow
-	obj_mainchara.canmove = !obj_mainchara.canmove
+	global.playercontrol = !global.playercontrol
 	
 	audio_play_sound(snd_Paper, 10, false)
 	 

@@ -22,6 +22,8 @@ global.globalsound = snd_Click
 global.climbing = false
 global.playercontrol = true
 
+global.ignorekey = false
+
 cursor_sprite = spr_mouse
 window_set_cursor(cr_none)
 
