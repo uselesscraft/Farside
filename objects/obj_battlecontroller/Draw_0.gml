@@ -5,7 +5,7 @@ draw_sprite_tiled(battlesky, 0, bgx, y)
 draw_sprite_tiled(battlebackground, 0, x, y)
 
 //units
-var currentunit = units[enemyselect].id
+var currentunit = units[turn].id
 
 for (var i = 0; i < array_length(unitrenderorder); i++) {
 	with (unitrenderorder[i]) {
@@ -49,14 +49,14 @@ draw_sprite(spr_line, 0, x + hpcolumn + 48, y + 140)
 
 //enemy
 for (var i = 0; i < array_length(enemyunits); i++) {
-	var chara = enemyunits[i]
+	var chara = enemyunits[i].id
 	
 	if (chara.hp > 0) {
 		draw_set_colour(c_gray)
 		if (chara == currentunit) { draw_set_colour(c_white) }
 		
-		obj_arrow._y = y + 145 + i * 8
-		obj_arrow.x = x + enemycolumn
+		obj_arrow._y = 0
+		obj_arrow.x = 0
 		
 		obj_arrow.current_state = RotationState.Right
 		

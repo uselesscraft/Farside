@@ -2,28 +2,28 @@
 // You can write your code in this editor
 instance_deactivate_all(true)
 
-units = []
+units = [] //holds all the unit and looks like this: current member, enemy 1, enemy 2, enemy 19 871 983
 unitrenderorder = []
 
 turn = 0
 
-partyunits = []
-enemyunits = []
+partyunits = [] //holds the party member and makes space for the rest
+enemyunits = [] //holds all the enemies
 
-enemyselect = array_length(global.myparty) - 1
+enemyselect = 0
 
-turncount = 0
-roundcount = 0
+turncount = 0 //how many turns in total (doesn't get reset unlike turn)
+roundcount = 0 //how many rounds uadsfoasdfoa
 
-battlewaitframes = 30
-battlewaitremain = 0
+battlewaitframes = 30  //win check delay max
+battlewaitremain = 0 //win check delay
 
 currentuser = noone
 currentaction = -1
 currenttargets = noone
 
-timer = 0
-timerdelay = 5
+timer = 0 //rolling hp timer
+timerdelay = 5 //rolling hp timer delay
 
 //make party
 partyunits = array_create(3, noone)
@@ -62,10 +62,10 @@ function selectaction() {
 	if (_unit.object_index == obj_battleunitplayer) { //if current unit is part of the team
 		var action = global.actionlibrary.attack
 			
-		var alltargets = array_filter(enemyunits, function(_unit, _index)
-		{
+		var alltargets = array_filter(enemyunits, function(_unit, _index) { //filters through the list of VERY EVIL doers and then returns those who meet the condition below!
 			return instance_exists(_unit) and (_unit.hp > 0) //if hp is higher than 0, it returns true. otherwise, it returns false
 		})
+		
 		var target = alltargets[irandom(array_length(alltargets) - 1)]
 		
 		beginaction(_unit.id, action, target)
@@ -99,7 +99,7 @@ function beginaction(_user, _action, _targets) {
 }
 
 function performaction(_waitanimend = false) {
-	if (global.currentmember == 1) {
+	if (global.currentmember == 1) { //abbigail
 		_waitanimend = true
 	}
 	
@@ -134,7 +134,7 @@ function performaction(_waitanimend = false) {
 				instance_create_depth(x, y, depth - 100, obj_battleeffect, {sprite_index : _effectsprite})
 			}
 		}
-	}
+	} 
 	else {
 		if (!instance_exists(obj_battleeffect)) {
 			battlewaitremain--
@@ -183,7 +183,7 @@ function refreshrenderorder() {
 
 refreshrenderorder()
 
-//switch between members
+//switch between members	
 function switchmember(_nextmember) {
 	var oldunit = partyunits[global.currentmember]
 
@@ -195,7 +195,7 @@ function switchmember(_nextmember) {
 	
 	if (!instance_exists(partyunits[global.currentmember])) {
 		partyunits[global.currentmember] = instance_create_depth(x + 60, y + 90, depth - 10, obj_battleunitplayer, global.mypartydata[global.currentmember])
-		array_push(units, partyunits[global.currentmember])
+		units[0] = partyunits[global.currentmember]
 	}	
 	
 	instance_activate_object(partyunits[global.currentmember])

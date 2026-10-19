@@ -25,4 +25,4 @@ if (movecam == true) {
 }
 
 camera_set_view_pos(view_camera[0], x - camwidth / 2, y - camheight / 2)
-
+camera_set_view_size(view_camera[0], 320 / zoomlevel, 180 / zoomlevel)

@@ -60,4 +60,6 @@ if (keyboard_check_pressed(vk_left)) {
 	}
 	
 	switchmember(next)
-}	
+}
+
+show_debug_message(units)

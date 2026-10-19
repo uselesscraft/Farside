@@ -3,6 +3,8 @@
 camwidth = 640
 camheight = 360
 
+zoomlevel = 1
+
 follow = obj_mainchara
 
 xto = x
