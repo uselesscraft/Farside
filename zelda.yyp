@@ -93,7 +93,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.100.0.1149",
+    "IDEVersion":"2026.100.0.1171",
   },
   "name":"zelda",
   "resources":[
@@ -230,6 +230,7 @@
     {"id":{"name":"spr_eliasbattleidle","path":"sprites/spr_eliasbattleidle/spr_eliasbattleidle.yy",},},
     {"id":{"name":"spr_eliasbattleold","path":"sprites/spr_eliasbattleold/spr_eliasbattleold.yy",},},
     {"id":{"name":"spr_eliasclimb","path":"sprites/spr_eliasclimb/spr_eliasclimb.yy",},},
+    {"id":{"name":"spr_eliasdown_1","path":"sprites/spr_eliasdown_1/spr_eliasdown_1.yy",},},
     {"id":{"name":"spr_eliasdown","path":"sprites/spr_eliasdown/spr_eliasdown.yy",},},
     {"id":{"name":"spr_eliasleft","path":"sprites/spr_eliasleft/spr_eliasleft.yy",},},
     {"id":{"name":"spr_eliasright","path":"sprites/spr_eliasright/spr_eliasright.yy",},},
