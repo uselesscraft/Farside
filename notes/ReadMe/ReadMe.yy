@@ -2,6 +2,7 @@
   "$GMNotes":"v2",
   "%Name":"ReadMe",
   "name":"ReadMe",
+  "openedOnFirstLoad":true,
   "parent":{
     "name":"zelda",
     "path":"zelda.yyp",

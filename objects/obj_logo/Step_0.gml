@@ -15,7 +15,7 @@ if (seconds <= 0) {
 	}
 	
 	alpha2 += 0.01
-	alpha2 = min(alpha2, 0.5)
+	alpha2 = min(alpha2, 0.25)
 }
 
 if (seconds <= -8) {
