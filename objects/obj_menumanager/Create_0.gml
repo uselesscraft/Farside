@@ -5,4 +5,5 @@ alpha = 1
 
 if (!audio_is_playing(mus_mainmenu)) {
 	audio_play_sound(mus_mainmenu, 10, true)
+	audio_sound_gain(mus_mainmenu, 0.75)
 }
