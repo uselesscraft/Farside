@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"01156a11-7ac5-4cb4-82df-76e0a80e7b39","name":"01156a11-7ac5-4cb4-82df-76e0a80e7b39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8ec6cdf8-cbab-41d0-a665-f54bb374eb50","name":"8ec6cdf8-cbab-41d0-a665-f54bb374eb50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"3598195c-d8cb-408b-b87e-07b0c8492cf1","name":"3598195c-d8cb-408b-b87e-07b0c8492cf1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"3049f35e-2f35-4462-bb14-228a7e53f1bb","name":"3049f35e-2f35-4462-bb14-228a7e53f1bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"fc1147bc-7fdd-49c3-a9d6-a62425138b5f","name":"fc1147bc-7fdd-49c3-a9d6-a62425138b5f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -87,7 +87,7 @@
     },
     "name":"spr_farsideanim",
     "playback":1,
-    "playbackSpeed":6.0,
+    "playbackSpeed":2.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -97,8 +97,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"01156a11-7ac5-4cb4-82df-76e0a80e7b39","path":"sprites/spr_farsideanim/spr_farsideanim.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6a885718-ee06-4a44-9af5-3ca3988f8f37","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ec6cdf8-cbab-41d0-a665-f54bb374eb50","path":"sprites/spr_farsideanim/spr_farsideanim.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6466a092-e40c-4432-8393-72d6b4726efc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3598195c-d8cb-408b-b87e-07b0c8492cf1","path":"sprites/spr_farsideanim/spr_farsideanim.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9552d897-f1e2-4a7e-a93a-be3a9c2de68b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},

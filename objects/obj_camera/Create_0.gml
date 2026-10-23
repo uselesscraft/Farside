@@ -3,6 +3,9 @@
 camwidth = 640
 camheight = 360
 
+camworldwidth = 320
+camworldheight = 180
+
 zoomlevel = 1
 
 follow = obj_mainchara

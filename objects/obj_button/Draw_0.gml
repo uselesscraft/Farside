@@ -7,7 +7,7 @@ draw_set_colour(c_black)
 
 draw_self()
 
-draw_text_transformed(x, y - 1, text, 0.8, 0.8, 0)
+draw_text_transformed(x, y - 1, text, 0.5, 0.5, 0)
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)

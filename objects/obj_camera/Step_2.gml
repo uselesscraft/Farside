@@ -3,8 +3,10 @@
 
 
 if (follow != noone) {
-	xto = follow.x 
-	yto = follow.y
+	if (instance_exists(follow)) {
+		xto = follow.x 
+		yto = follow.y
+	}
 }
 
 if (movecam == true) {
@@ -24,5 +26,5 @@ if (movecam == true) {
 	y += yto - y
 }
 
-camera_set_view_pos(view_camera[0], x - camwidth / 2, y - camheight / 2)
-camera_set_view_size(view_camera[0], 320 / zoomlevel, 180 / zoomlevel)
+camera_set_view_pos(view_camera[0], x - camworldwidth / zoomlevel / 2, y - camworldheight / zoomlevel / 2)
+camera_set_view_size(view_camera[0], camworldwidth / zoomlevel, camworldheight / zoomlevel)

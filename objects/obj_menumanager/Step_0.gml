@@ -30,17 +30,27 @@ if (global.menuindex < 0) {
 if (interactkey()) {
 	switch global.menuindex {
 		case 0:
-			room_goto(room_one)
+			room_goto(room_fourth)
+			
+			audio_sound_gain(mus_mainmenu, 0, 240)
 		break
 	
 		case 1:
-			//jaja no settings for u screw u
+			//no settings for you screw you!
 		break
 	
 		case 2:
 			call_later(0.5, time_source_units_seconds, function() {
 				game_end()
 			}, false)
+			
+			audio_sound_gain(mus_mainmenu, 0, 240)
 		break
 	}
+}
+
+timeforsomereason-- 
+
+if (timeforsomereason <= 0) {
+	alpha -= 0.01
 }
