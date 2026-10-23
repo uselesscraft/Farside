@@ -80,7 +80,7 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	draw_text(x + namecolumn, y + 153 + i * 9, chara.name)
 	
 	//HP
-	draw_set_font(fnt_TextBattle2)
+	draw_set_font(fnt_TextBattleSmall)
 	
 	var imgindex = 0
 	if (i == global.currentmember) { imgindex = 1 }
@@ -98,7 +98,7 @@ for (var i = 0; i < array_length(global.myparty); i++) {
 	draw_text(x + hpcolumn - 3, y + 153 + i * 9, hp)
 	
 	//WAVES
-	draw_set_font(fnt_TextBattle2)
+	draw_set_font(fnt_TextBattleSmall)
 	draw_sprite(spr_hp, imgindex, x + mwcolumn + 1, y + 153 + i * 9)
 	draw_set_colour(c_black)
 	

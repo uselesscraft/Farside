@@ -1,14 +1,14 @@
 switch global.menuindex {
 	case 0:
-		obj_arrow._y = 110
+		obj_arrow._y = 95
 	break
 	
 	case 1:
-		obj_arrow._y = 135
+		obj_arrow._y = 121
 	break
 	
 	case 2:
-		obj_arrow._y = 160
+		obj_arrow._y = 147
 	break
 }
 

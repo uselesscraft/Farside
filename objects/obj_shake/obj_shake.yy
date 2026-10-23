@@ -10,8 +10,8 @@
   "name":"obj_shake",
   "overriddenProperties":[],
   "parent":{
-    "name":"Target",
-    "path":"folders/Objects/Effects/Target.yy",
+    "name":"Target - Unused",
+    "path":"folders/Objects/Effects/Target - Unused.yy",
   },
   "parentObjectId":null,
   "persistent":false,

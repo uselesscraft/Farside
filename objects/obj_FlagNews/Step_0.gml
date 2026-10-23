@@ -5,16 +5,16 @@ if (place_meeting(x, y, obj_mainchara) and global.flags[NEWS_REPORTER] == false)
 }
 
 if (trigger == true) {
-	if (instance_exists(obj_Textbox) == false) {
+	if (instance_exists(obj_textbox) == false) {
 		var mus = mus_Forest
 		audio_sound_gain(mus, 0, 300)
 		
 		calltext(text, 0.5)
 	} else {
-		obj_Textbox.playerstartmove = true
-		obj_Textbox.playerstopmove = true
+		obj_textbox.playerstartmove = true
+		obj_textbox.playerstopmove = true
 		
-		if (obj_Textbox.page >= 3) {
+		if (obj_textbox.page >= 3) {
 			var heismoving = move_to(9, 8, obj_napstablook, 3)
 			
 			if (heismoving) {
@@ -24,7 +24,7 @@ if (trigger == true) {
 		}
 	}
 	
-	if (obj_Textbox.closing == true) {
+	if (obj_textbox.closing == true) {
 		global.flags[NEWS_REPORTER] = true
 		
 		var mus = mus_Forest

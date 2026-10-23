@@ -1,4 +1,4 @@
-draw_set_font(fnt_Text2)
+draw_set_font(fnt_TextSmall)
 
 draw_set_colour(c_black)
 

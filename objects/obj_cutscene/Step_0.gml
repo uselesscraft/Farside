@@ -100,13 +100,13 @@ switch (tag) {
 		
 		calltext(txt, txtspd)
 		
-		//obj_Textbox.animend = false - using CUTSCENE.SET_VARIABLE to do that is better.
+		//obj_textbox.animend = false - using CUTSCENE.SET_VARIABLE to do that is better.
 		
 		
 		waiting = CUTSCENE.TEXT
 		
 		waitcondition = function() {
-			if (!instance_exists(obj_Textbox)) {
+			if (!instance_exists(obj_textbox)) {
 				return true
 			}
 			

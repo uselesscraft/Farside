@@ -22,14 +22,14 @@ interacting = false
 shadow = true
 
 function startdialogue() {
-	if (instance_exists(obj_Textbox) == false) {
+	if (instance_exists(obj_textbox) == false) {
 		calltext(text, 0.5)
 	}
 }
 
 function faceplr() {
-	obj_Textbox.playerstartmove = false 
-	obj_Textbox.playerstopmove = true
+	obj_textbox.playerstartmove = false 
+	obj_textbox.playerstopmove = true
 	
 	var dx = obj_mainchara.x - x
 	var dy = obj_mainchara.y - y

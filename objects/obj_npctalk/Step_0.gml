@@ -1,6 +1,6 @@
 var dist = point_distance(x, y, obj_mainchara.x, obj_mainchara.y)
 
-if ((interactkey()) and dist < range and !instance_exists(obj_Textbox)) {	
+if ((interactkey()) and dist < range and !instance_exists(obj_textbox)) {	
 	var dirnpc = point_direction(obj_mainchara.x, obj_mainchara.y, x, y)
 	var dirdiff = angle_difference(obj_mainchara.direction, dirnpc)
 	
@@ -12,7 +12,7 @@ if ((interactkey()) and dist < range and !instance_exists(obj_Textbox)) {
 	}
 }
 
-if (!instance_exists(obj_Textbox)) {
+if (!instance_exists(obj_textbox)) {
 	sprite_index = spritenormal
 	image_speed = 1
 }
@@ -21,11 +21,11 @@ if (global.talking) {
 	if (allanimate) {
 		image_speed = 1
 	} else {
-		if (instance_exists(obj_Textbox)) {
-			image_speed = array_contains(animatepage, obj_Textbox.page) ? imgspd : 0
+		if (instance_exists(obj_textbox)) {
+			image_speed = array_contains(animatepage, obj_textbox.page) ? imgspd : 0
 		}
 	}
-} else if (instance_exists(obj_Textbox)) {
+} else if (instance_exists(obj_textbox)) {
 	image_speed = 0
 	image_index = 0
 }

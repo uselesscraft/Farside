@@ -9,16 +9,18 @@ current_state = RotationState.Right
 
 sound_effects = true
 
-hor_sfx = true
-ver_sfx = false
+hor_sfx = false
+ver_sfx = true
 both_sfx = false
 press_sfx = true
 
 _x = x
 _y = y
 
-if (global.battle) {
-	image_xscale = 0.5
-	image_yscale = 0.5
+if (variable_global_exists("battle")) {
+	if (global.battle) {
+		image_xscale = 0.5
+		image_yscale = 0.5
+	}
 }
 

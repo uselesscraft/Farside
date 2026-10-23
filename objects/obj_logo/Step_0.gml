@@ -8,11 +8,14 @@ if (time <= 0) {
 time--
 
 if (seconds <= 0) {
-	image_alpha += 0.015
 	image_speed = 1
 	
+	if (image_index >= 1) {
+		image_alpha += 0.02
+	}
+	
 	alpha2 += 0.01
-	alpha2 = min(alpha2, 0.35)
+	alpha2 = min(alpha2, 0.5)
 }
 
 if (seconds <= -8) {
@@ -28,8 +31,8 @@ if (seconds <= -8) {
 }
 
 if (floor(image_index) != oldframe) {
-	if (!instance_exists(obj_ShakeVertical)) {
-		var shake = instance_create_depth(0, 0, 0, obj_ShakeVertical)
+	if (!instance_exists(obj_shakevertical)) {
+		var shake = instance_create_depth(0, 0, 0, obj_shakevertical)
 		shake.obj = obj_logo
 		shake.objy= y
 	}
@@ -47,8 +50,8 @@ if (textalpha == 1) {
 oldframe = floor(image_index)
 
 if (alpha >= 1) {
-	call_later(4, time_source_units_seconds, function() {
-		room = room_mainmenu
+	call_later(1, time_source_units_seconds, function() {
+		room_goto(room_select)
 	}, false)
 }
 

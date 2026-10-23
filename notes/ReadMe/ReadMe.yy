@@ -1,0 +1,12 @@
+{
+  "$GMNotes":"v2",
+  "%Name":"ReadMe",
+  "name":"ReadMe",
+  "parent":{
+    "name":"zelda",
+    "path":"zelda.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+  "shouldOpenOnLoad":true,
+}
