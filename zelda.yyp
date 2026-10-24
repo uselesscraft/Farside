@@ -201,6 +201,7 @@
     {"id":{"name":"snd_HitFinish","path":"sounds/snd_HitFinish/snd_HitFinish.yy",},},
     {"id":{"name":"snd_minecraftswoosh","path":"sounds/snd_minecraftswoosh/snd_minecraftswoosh.yy",},},
     {"id":{"name":"snd_Move","path":"sounds/snd_Move/snd_Move.yy",},},
+    {"id":{"name":"snd_OuchDamageWhyWouldYouDoThat_QuestionMark_","path":"sounds/snd_OuchDamageWhyWouldYouDoThat_QuestionMark_/snd_OuchDamageWhyWouldYouDoThat_QuestionMark_.yy",},},
     {"id":{"name":"snd_Paper","path":"sounds/snd_Paper/snd_Paper.yy",},},
     {"id":{"name":"snd_RRRing","path":"sounds/snd_RRRing/snd_RRRing.yy",},},
     {"id":{"name":"snd_Select","path":"sounds/snd_Select/snd_Select.yy",},},

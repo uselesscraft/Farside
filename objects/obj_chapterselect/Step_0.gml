@@ -21,3 +21,9 @@ if (interactkey()) {
 		room_goto(room_mainmenu)
 	}
 }
+
+timeforsomereason-- 
+
+if (timeforsomereason <= 0) {
+	alpha -= 0.01
+}

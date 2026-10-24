@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_OuchDamageWhyWouldYouDoThat_QuestionMark_",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.752,
+  "exportDir":"",
+  "name":"snd_OuchDamageWhyWouldYouDoThat_QuestionMark_",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Sounds/SFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_OuchDamageWhyWouldYouDoThat_QuestionMark_.mp3",
+  "volume":1.0,
+}

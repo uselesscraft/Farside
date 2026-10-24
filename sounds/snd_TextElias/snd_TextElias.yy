@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.1687083,
+  "duration":0.7356667,
   "exportDir":"",
   "name":"snd_TextElias",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"snd_TextElias.ogg",
+  "soundFile":"snd_TextElias.mp3",
   "volume":1.0,
 }

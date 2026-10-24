@@ -13,16 +13,17 @@ for (var i = 0; i < array_length(partyunits); i++) {
 		if (timer <= 0) {
 			timer = timerdelay
 			audio_sound_pitch(snd_Move, 1)
+			audio_sound_pitch(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, 1)
 			
 			//hp
 			if (currenthp > targethp) {
 				currenthp--
-				audio_play_sound(snd_Move, 10, false)
-				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
+				audio_play_sound(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, 10, false)
+				audio_sound_pitch(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, random_range(1.1, 1.2))
 			} else if (currenthp < targethp) {
 				currenthp++
-				audio_play_sound(snd_Move, 10, false)
-				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
+				audio_play_sound(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, 10, false)
+				audio_sound_pitch(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, random_range(1.1, 1.2))
 			}
 			
 			//mw
