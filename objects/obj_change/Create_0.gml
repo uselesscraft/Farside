@@ -1,6 +1,6 @@
 /// @description Set info from door
 // You can write your code in this editor
-door = obj_Door
+door = obj_door
 
 next_room = room_one
 next_x = 1983

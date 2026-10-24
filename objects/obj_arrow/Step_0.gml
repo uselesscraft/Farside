@@ -18,25 +18,25 @@ switch (current_state) {
 
 //SFX and stuff wowie!!!
 if (hor_sfx) {
-	if (keyboard_check_pressed(ord("A"))) { audio_play_sound(snd_Move, 10, false) }
-	if (keyboard_check_pressed(ord("D"))) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.LEFT)) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.RIGHT)) { audio_play_sound(snd_Move, 10, false) }
 	
 	ver_sfx = false
 }
 
 else if (ver_sfx) {
-	if (keyboard_check_pressed(ord("W"))) { audio_play_sound(snd_Move, 10, false) }
-	if (keyboard_check_pressed(ord("S"))) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.UP)) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.DOWN)) { audio_play_sound(snd_Move, 10, false) }
 	
 	hor_sfx = false
 }
 
 else if (both_sfx) {
-	if (keyboard_check_pressed(ord("A"))) { audio_play_sound(snd_Move, 10, false) }
-	if (keyboard_check_pressed(ord("D"))) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.LEFT)) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.RIGHT)) { audio_play_sound(snd_Move, 10, false) }
 	
-	if (keyboard_check_pressed(ord("W"))) { audio_play_sound(snd_Move, 10, false) }
-	if (keyboard_check_pressed(ord("S"))) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.UP)) { audio_play_sound(snd_Move, 10, false) }
+	if (movemenu(MOVE_FUNCTION.DOWN)) { audio_play_sound(snd_Move, 10, false) }
 	
 	hor_sfx = false
 	ver_sfx = false

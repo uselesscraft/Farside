@@ -100,7 +100,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":20,
-    "yorigin":-2,
+    "yorigin":4,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

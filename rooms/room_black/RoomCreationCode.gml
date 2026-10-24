@@ -1,3 +1,3 @@
-if (global.inide) {
-	room_goto(room_fourth)
-}
+//if (global.inide) {
+	//room_goto(room_fourth)
+//}

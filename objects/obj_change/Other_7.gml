@@ -3,6 +3,6 @@
 
 if (back == false) {
     back = true
-} else {
+} else {	
 	delete_obj = true
 }

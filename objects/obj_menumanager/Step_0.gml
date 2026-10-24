@@ -1,22 +1,24 @@
 switch global.menuindex {
 	case 0:
-		obj_arrow._y = 95
+		obj_arrow._x = 55
 	break
 	
 	case 1:
-		obj_arrow._y = 121
+		obj_arrow._x = 160
 	break
 	
 	case 2:
-		obj_arrow._y = 147
+		obj_arrow._x = 265
 	break
 }
 
-if (keyboard_check_pressed(ord("S"))) {
+obj_arrow.hor_sfx = true
+
+if (movemenu(MOVE_FUNCTION.RIGHT)) {
 	global.menuindex++
 }
 
-if (keyboard_check_pressed(ord("W"))) {
+if (movemenu(MOVE_FUNCTION.LEFT)) {
 	global.menuindex--
 }
 
@@ -47,10 +49,4 @@ if (interactkey()) {
 			audio_sound_gain(mus_mainmenu, 0, 240)
 		break
 	}
-}
-
-timeforsomereason-- 
-
-if (timeforsomereason <= 0) {
-	alpha -= 0.01
 }
