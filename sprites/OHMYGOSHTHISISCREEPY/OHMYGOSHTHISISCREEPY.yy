@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_eliasbattleidle_2",
+  "%Name":"OHMYGOSHTHISISCREEPY",
   "bboxMode":0,
   "bbox_bottom":57,
   "bbox_left":0,
@@ -36,7 +36,7 @@
     {"$GMImageLayer":"","%Name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","blendMode":0,"displayName":"Torso","isLocked":false,"name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","blendMode":0,"displayName":"Stuff","isLocked":false,"name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
-  "name":"spr_eliasbattleidle_2",
+  "name":"OHMYGOSHTHISISCREEPY",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -48,7 +48,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_eliasbattleidle_2",
+    "%Name":"OHMYGOSHTHISISCREEPY",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -72,7 +72,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_eliasbattleidle_2",
+    "name":"OHMYGOSHTHISISCREEPY",
     "playback":1,
     "playbackSpeed":1.0,
     "playbackSpeedType":0,
@@ -86,10 +86,10 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bca5443a-9356-44c7-bef4-f180acc35cd7","path":"sprites/spr_eliasbattleidle_2/spr_eliasbattleidle_2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bca5443a-9356-44c7-bef4-f180acc35cd7","path":"sprites/OHMYGOSHTHISISCREEPY/OHMYGOSHTHISISCREEPY.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c6a01912-4c55-46e0-ad1b-f585616eb299","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be8d0fde-8494-4593-b9d9-bb95b1f83839","path":"sprites/spr_eliasbattleidle_2/spr_eliasbattleidle_2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be8d0fde-8494-4593-b9d9-bb95b1f83839","path":"sprites/OHMYGOSHTHISISCREEPY/OHMYGOSHTHISISCREEPY.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0bc15d28-a351-4735-b86c-84c2942d2f63","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
