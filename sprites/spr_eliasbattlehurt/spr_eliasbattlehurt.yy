@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_eliasbattleidle_1",
+  "%Name":"spr_eliasbattlehurt",
   "bboxMode":0,
   "bbox_bottom":57,
   "bbox_left":0,
@@ -19,6 +19,10 @@
   "height":58,
   "HTile":false,
   "layers":[
+    {"$GMImageFolderLayer":"","%Name":"51442096-c0a4-4eef-a655-8b79ba7af5cc","blendMode":0,"displayName":"Arms","isLocked":false,"layers":[
+        {"$GMImageLayer":"","%Name":"86b8e18a-0930-423e-9216-505a117d1daf","blendMode":0,"displayName":"RArm","isLocked":false,"name":"86b8e18a-0930-423e-9216-505a117d1daf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+        {"$GMImageLayer":"","%Name":"2b51cf02-6af2-460a-a1d3-a5be7b8414c9","blendMode":0,"displayName":"LArm","isLocked":false,"name":"2b51cf02-6af2-460a-a1d3-a5be7b8414c9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+      ],"name":"51442096-c0a4-4eef-a655-8b79ba7af5cc","opacity":100.0,"resourceType":"GMImageFolderLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageFolderLayer":"","%Name":"4a9fcd27-0171-478a-8547-2ba04d4a908b","blendMode":0,"displayName":"Head","isLocked":false,"layers":[
         {"$GMImageLayer":"","%Name":"a33ecb49-2efb-4112-ad0d-b82835143dc2","blendMode":0,"displayName":"Face","isLocked":false,"name":"a33ecb49-2efb-4112-ad0d-b82835143dc2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
         {"$GMImageLayer":"","%Name":"095c3396-171b-4632-9214-a186a79fe247","blendMode":0,"displayName":"Hairline","isLocked":false,"name":"095c3396-171b-4632-9214-a186a79fe247","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -28,14 +32,10 @@
         {"$GMImageLayer":"","%Name":"ccaf1931-d710-4850-8433-012185f4cd14","blendMode":0,"displayName":"LLeg","isLocked":false,"name":"ccaf1931-d710-4850-8433-012185f4cd14","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
         {"$GMImageLayer":"","%Name":"7c1b86df-d880-497a-86cb-c4e00275dc7c","blendMode":0,"displayName":"RLeg","isLocked":false,"name":"7c1b86df-d880-497a-86cb-c4e00275dc7c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
       ],"name":"0527580d-c54d-46e7-9b76-fab7472cb69f","opacity":100.0,"resourceType":"GMImageFolderLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageFolderLayer":"","%Name":"51442096-c0a4-4eef-a655-8b79ba7af5cc","blendMode":0,"displayName":"Arms","isLocked":false,"layers":[
-        {"$GMImageLayer":"","%Name":"86b8e18a-0930-423e-9216-505a117d1daf","blendMode":0,"displayName":"RArm","isLocked":false,"name":"86b8e18a-0930-423e-9216-505a117d1daf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-        {"$GMImageLayer":"","%Name":"2b51cf02-6af2-460a-a1d3-a5be7b8414c9","blendMode":0,"displayName":"LArm","isLocked":false,"name":"2b51cf02-6af2-460a-a1d3-a5be7b8414c9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-      ],"name":"51442096-c0a4-4eef-a655-8b79ba7af5cc","opacity":100.0,"resourceType":"GMImageFolderLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","blendMode":0,"displayName":"Torso","isLocked":false,"name":"9f5e9a4a-2c89-46c0-991e-339d38010f64","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","blendMode":0,"displayName":"Stuff","isLocked":false,"name":"3208b60d-e4d5-46ec-9767-fd4d338f49d5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
-  "name":"spr_eliasbattleidle_1",
+  "name":"spr_eliasbattlehurt",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -47,7 +47,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_eliasbattleidle_1",
+    "%Name":"spr_eliasbattlehurt",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -71,7 +71,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_eliasbattleidle_1",
+    "name":"spr_eliasbattlehurt",
     "playback":1,
     "playbackSpeed":1.0,
     "playbackSpeedType":0,
@@ -85,7 +85,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bca5443a-9356-44c7-bef4-f180acc35cd7","path":"sprites/spr_eliasbattleidle_1/spr_eliasbattleidle_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bca5443a-9356-44c7-bef4-f180acc35cd7","path":"sprites/spr_eliasbattlehurt/spr_eliasbattlehurt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c6a01912-4c55-46e0-ad1b-f585616eb299","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

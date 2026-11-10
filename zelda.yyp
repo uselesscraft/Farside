@@ -93,7 +93,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.100.0.1171",
+    "IDEVersion":"2026.100.0.1199",
   },
   "name":"zelda",
   "resources":[
@@ -235,10 +235,11 @@
     {"id":{"name":"spr_eliasbattleatk","path":"sprites/spr_eliasbattleatk/spr_eliasbattleatk.yy",},},
     {"id":{"name":"spr_eliasbattlegen","path":"sprites/spr_eliasbattlegen/spr_eliasbattlegen.yy",},},
     {"id":{"name":"spr_eliasbattleguard","path":"sprites/spr_eliasbattleguard/spr_eliasbattleguard.yy",},},
-    {"id":{"name":"spr_eliasbattleidle_1","path":"sprites/spr_eliasbattleidle_1/spr_eliasbattleidle_1.yy",},},
+    {"id":{"name":"spr_eliasbattlehurt","path":"sprites/spr_eliasbattlehurt/spr_eliasbattlehurt.yy",},},
     {"id":{"name":"spr_eliasbattleidle_2","path":"sprites/spr_eliasbattleidle_2/spr_eliasbattleidle_2.yy",},},
     {"id":{"name":"spr_eliasbattleidle","path":"sprites/spr_eliasbattleidle/spr_eliasbattleidle.yy",},},
     {"id":{"name":"spr_eliasbattleold","path":"sprites/spr_eliasbattleold/spr_eliasbattleold.yy",},},
+    {"id":{"name":"spr_eliasbattlethink","path":"sprites/spr_eliasbattlethink/spr_eliasbattlethink.yy",},},
     {"id":{"name":"spr_eliasclimb","path":"sprites/spr_eliasclimb/spr_eliasclimb.yy",},},
     {"id":{"name":"spr_eliasdown","path":"sprites/spr_eliasdown/spr_eliasdown.yy",},},
     {"id":{"name":"spr_eliasleft","path":"sprites/spr_eliasleft/spr_eliasleft.yy",},},
