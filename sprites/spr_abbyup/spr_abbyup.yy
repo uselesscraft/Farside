@@ -26,7 +26,7 @@
   ],
   "name":"spr_abbyup",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Abbigail",
     "path":"folders/Sprites/Characters/Abbigail.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":21,
-    "yorigin":27,
+    "yorigin":26,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
