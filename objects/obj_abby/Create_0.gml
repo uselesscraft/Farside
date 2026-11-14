@@ -10,3 +10,5 @@ rsprite = spr_abbyright
 
 x = obj_mainchara.x 
 y = obj_mainchara.y 
+
+image_speed = 0

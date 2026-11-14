@@ -18,6 +18,9 @@ spriteLeft = spr_eliasleft
 spriteUp = spr_eliasup
 spriteDown = spr_eliasdown
 
+varyingison = true
+varyingindex = false
+
 direction = 270
 
 colliding = false

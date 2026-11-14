@@ -20,7 +20,15 @@ if ((global.playercontrol and canmove) and !global.climbing) {
 	
 	if (rightKey or leftKey or upKey or downKey) {
 		if (xSpd == 0 and ySpd == 0) {
-			image_index = 1
+			if (varyingison) {
+				if (varyingindex == true) {
+					image_index = 3
+				} else {
+					image_index = 1
+				}
+			} else {
+				image_index = 1
+			}
 		}
 	}
 	
@@ -53,15 +61,6 @@ if ((global.playercontrol and canmove) and !global.climbing) {
 	if (prio == prioY and !upKey and !downKey)  prio = -1
 	
 	if (prio == prioY) {
-		//if (upKey and downKey and colliding) {
-		//    if (current_time div 50 mod 2 == 0) {
-		//        sprite_index = spriteUp
-		//	} else {
-		//        sprite_index = spriteDown
-		//		y += 1
-		//	}
-		//} else 
-		
 		if (upKey) {
 		    sprite_index = spriteUp
 		} else if (downKey) {
@@ -119,6 +118,15 @@ if ((global.playercontrol and canmove) and !global.climbing) {
 	if (sprite_index == spr_eliasclimb) {
 		sprite_index = spriteUp
 	}
+	
+	if (varyingison == true) {
+		if (image_index == 1) {
+			varyingindex = true
+		} else if (image_index == 3) {
+			varyingindex = false
+		}
+	}
+	
 } else if (!global.climbing) {
 	image_index = 0
 	image_speed = 0

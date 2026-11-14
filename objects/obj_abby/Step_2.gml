@@ -18,5 +18,9 @@ if (recordedsprite == spr_eliasdown) {
 	sprite_index = lsprite
 }
 
-image_speed = plr.image_speed
-image_index = plr.image_index
+switch (floor(plr.image_index)) {
+    case 0: image_index = 0; break;
+    case 1: image_index = 3; break;
+    case 2: image_index = 2; break;
+    case 3: image_index = 1; break;
+}
