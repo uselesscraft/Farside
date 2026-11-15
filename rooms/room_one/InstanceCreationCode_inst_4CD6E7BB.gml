@@ -1,4 +1,4 @@
 text = [
 	"It's a tree.",
-	"... If you can't tell.",
+	"... If you couldn't tell already...",
 ]

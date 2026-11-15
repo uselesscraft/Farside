@@ -1,1 +1,1 @@
-text = ["It's a tree.", "... If you can't tell."]
+text = ["It's a tree.", "... If you couldn't tell already..."]

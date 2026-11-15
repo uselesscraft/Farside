@@ -8,3 +8,5 @@ next_y = 1987
 
 back = false
 delete_obj = false
+
+alpha = 0
