@@ -23,6 +23,8 @@ global.enemies =
 			var target = alltargets[irandom(array_length(alltargets) - 1)]
 			
 			return[action, target]
+			
+			//same result could be achieved through an if statement but whatever... dsfgjfgugdsr
 		}
 	}
 }

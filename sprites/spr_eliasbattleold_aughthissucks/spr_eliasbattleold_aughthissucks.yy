@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Variation",
-    "path":"folders/Sprites/Characters/Elias/Battle/Variation.yy",
+    "name":"VariationOrOld",
+    "path":"folders/Sprites/Characters/Elias/Battle/VariationOrOld.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
