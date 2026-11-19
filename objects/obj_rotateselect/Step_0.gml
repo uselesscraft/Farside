@@ -5,11 +5,11 @@ image_yscale = sine(image_yscale, 0.08, 0.08)
 
 image_angle -= 2
 
-if (target != noone) {
+if (follow != noone) {
 	visible = true
 	
-	x = target.x + target.sprite_width / 2
-	y = target.y + target.sprite_height / 2
+	x = follow.x + follow.sprite_width / 2
+	y = follow.y + follow.sprite_height / 2
 	
 	depth = _depth - 10
 } else {

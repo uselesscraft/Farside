@@ -2,7 +2,15 @@
 bgx += 0.25
 
 draw_sprite_tiled(battlesky, 0, bgx, y)
-draw_sprite_tiled(battlebackground, 0, x, y)
+draw_sprite(battlebackground, 0, x, y)
+
+draw_set_colour(c_black)
+
+var width = 50
+var height = 180
+
+draw_rectangle(x - width, y, x, y + height, false)
+draw_rectangle(x + 320, y, x + 320 + width, y + height, false)
 
 //units
 var currentunit = units[turn].id
@@ -25,7 +33,7 @@ draw_sprite_stretched(spr_box, 0, x + 75, y + 140, 245, 40)
 draw_sprite_stretched(spr_box, 0, x, y + 130, 74, 50)
 
 //positions
-var enemycolumn = 25
+var enemycolumn = 20
 var namecolumn = 90
 var hpcolumn = 170
 var mwcolumn = 240

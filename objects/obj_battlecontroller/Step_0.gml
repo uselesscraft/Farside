@@ -2,10 +2,10 @@ battlestate()
 
 for (var i = 0; i < array_length(partyunits); i++) {
 	if (partyunits[i] != noone and instance_exists(partyunits[i])) {
-	    var targethp = partyunits[i].hp
+	    var followhp = partyunits[i].hp
 		var currenthp = global.mypartydata[i].hp
 		
-		var targetmw = partyunits[i].mw
+		var followmw = partyunits[i].mw
 		var currentmw = global.mypartydata[i].mw
 		
 		timer--
@@ -16,11 +16,11 @@ for (var i = 0; i < array_length(partyunits); i++) {
 			audio_sound_pitch(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, 1)
 			
 			//hp
-			if (currenthp > targethp) {
+			if (currenthp > followhp) {
 				currenthp--
 				audio_play_sound(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, 10, false)
 				audio_sound_pitch(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, random_range(1.1, 1.2))
-			} else if (currenthp < targethp) {
+			} else if (currenthp < followhp) {
 				currenthp++
 				audio_play_sound(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, 10, false)
 				audio_sound_pitch(snd_OuchDamageWhyWouldYouDoThat_QuestionMark_, random_range(1.1, 1.2))
@@ -29,11 +29,11 @@ for (var i = 0; i < array_length(partyunits); i++) {
 			//mw
 			global.mypartydata[i].hp = currenthp
 			
-			if (currentmw > targetmw) {
+			if (currentmw > followmw) {
 				currentmw--
 				audio_play_sound(snd_Move, 10, false)
 				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
-			} else if (currentmw < targetmw) {
+			} else if (currentmw < followmw) {
 				currentmw++
 				audio_play_sound(snd_Move, 10, false)
 				audio_sound_pitch(snd_Move, random_range(1.1, 1.2))
@@ -62,5 +62,3 @@ if (keyboard_check_pressed(vk_left)) {
 	
 	switchmember(next)
 }
-
-show_debug_message(units)

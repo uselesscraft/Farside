@@ -15,7 +15,7 @@ image_yscale = 2.2 * 2
 default_x = 0
 default_y = 360
 
-target_y = default_y - sprite_height
+follow_y = default_y - sprite_height
 
 box_width = 220
 text_height = 22

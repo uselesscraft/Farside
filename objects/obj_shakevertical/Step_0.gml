@@ -1,19 +1,18 @@
 if (shake > 0) {
 
     if (alarm[0] == -1) {
-        alarm[0] = 2
+        alarm[0] = 4
     }
 
-    valY = shake * shakeMult
+    valy = shake * shakemult
 
     with (obj) {
-        y = other.objy + other.valY
+        y = other.firsty + other.valy
     }
-
-    shake -= shakeDec
-
 } else {
     instance_destroy()
 	
-	obj.y = objy
+	with (obj) {
+		y = other.firsty
+	}
 }

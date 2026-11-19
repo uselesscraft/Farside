@@ -30,8 +30,8 @@ pos_y[0] = y
 	
 _frame[0] = sprite_index
 
-targetlerp = 0
-targetlerpy = 0
+followlerp = 0
+followlerpy = 0
 
 heightclamp = true
 

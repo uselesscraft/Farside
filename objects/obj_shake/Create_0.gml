@@ -1,8 +1,8 @@
-shake = 5
+shake = 2
 shakemult = 1
 shakedec = 0.15
 
-obj = obj_Enemy
-firstx = obj.x
+obj = obj_persistent
+firstx = 0
 valx = 0
 

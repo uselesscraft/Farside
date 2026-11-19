@@ -29,7 +29,7 @@ if (keyboard_check_pressed(vk_enter) == true or gamepad_button_check_pressed(0, 
 }
 
 if (closing == false) {
-	y = lerp(y, target_y, lerp_value)
+	y = lerp(y, follow_y, lerp_value)
 } else {
 	global.textboxfinish = true
 	

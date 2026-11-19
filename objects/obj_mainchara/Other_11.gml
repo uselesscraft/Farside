@@ -1,4 +1,4 @@
-/// @description Step - Follow
+/// @description Step - follow
 // You can write your code in this editor
 if (!global.climbing) {
 	if (x != xprevious or y != yprevious) {

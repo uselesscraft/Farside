@@ -1,4 +1,4 @@
-/// @description Create - Follow
+/// @description Create - follow
 // You can write your code in this editor
 
 array_size = 90

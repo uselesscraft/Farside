@@ -3,4 +3,4 @@ _y = 0
 
 _depth = 0
 
-target = noone
+follow = noone

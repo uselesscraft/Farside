@@ -2,6 +2,17 @@
 // You can write your code in this editor
 instance_deactivate_all(true)
 
+//activate stuff
+instance_create_depth(x, y, depth - 1, obj_curtain)
+instance_activate_object(obj_curtain)
+
+instance_create_depth(x, y, depth - 1, obj_arrow)
+instance_activate_object(obj_arrow)
+
+instance_activate_object(obj_persistent)
+instance_activate_object(obj_camera)
+instance_activate_object(obj_shake)
+
 units = [] //holds all the unit and looks like this: current member, enemy 1, enemy 2, enemy 19 871 983
 unitrenderorder = []
 
@@ -20,10 +31,11 @@ battlewaitremain = 0 //win check delay
 
 currentuser = noone
 currentaction = -1
-currenttargets = noone
+currentfollows = noone
 
 timer = 0 //rolling hp timer
 timerdelay = 5 //rolling hp timer delay
+
 
 //make party
 partyunits = array_create(3, noone)
@@ -37,16 +49,7 @@ for (var i = 0; i < array_length(enemies); i++) {
 	array_push(units, enemyunits[i])
 }
 
-//activate stuff
-instance_create_depth(x, y, depth - 1, obj_curtain)
-instance_activate_object(obj_curtain)
-
-instance_create_depth(x, y, depth - 1, obj_arrow)
-instance_activate_object(obj_arrow)
-
-instance_activate_object(obj_persistent)
-
-bgx = 0
+bgx = x
 
 //states
 function selectaction() {
@@ -62,13 +65,38 @@ function selectaction() {
 	if (_unit.object_index == obj_battleunitplayer) { //if current unit is part of the team
 		var action = global.actionlibrary.attack
 			
-		var alltargets = array_filter(enemyunits, function(_unit, _index) { //filters through the list of VERY EVIL doers and then returns those who meet the condition below!
+		var allfollows = array_filter(enemyunits, function(_unit, _index) { //filters through the list of VERY EVIL doers and then returns those who meet the condition below!
 			return instance_exists(_unit) and (_unit.hp > 0) //if hp is higher than 0, it returns true. otherwise, it returns false
 		})
 		
-		var target = alltargets[irandom(array_length(alltargets) - 1)]
+		var _follow = allfollows[irandom(array_length(allfollows) - 1)]
 		
-		beginaction(_unit.id, action, target)
+		beginaction(_unit.id, action, _follow)
+		
+		with (obj_camera) {
+			follow = noone
+			freeze = true
+		}
+		
+		var shakecam = instance_create_depth(0, 0, 0, obj_shake)
+		shakecam.obj = obj_camera
+		shakecam.firstx = obj_camera.x
+		shakecam.shake = 3
+		shakecam.shakedec = 1
+		
+		var shake = instance_create_depth(0, 0, 0, obj_shake)
+		shake.obj = _follow
+		shake.firstx = _follow.x
+		shake.shake = 5
+		shake.shakedec = 1
+		
+		var shakehitter = instance_create_depth(0, 0, 0, obj_shake)
+		shakehitter.obj = _unit
+		shakehitter.firstx = _unit.x	
+		shakehitter.shake = 5
+		shakehitter.shakedec = 1
+		
+		audio_play_sound(snd_Slash, 10, false)
 		
 	} else { //EVIL MONSTER
 		var evilaction = _unit.execute()
@@ -76,12 +104,12 @@ function selectaction() {
 	}
 }
 
-function beginaction(_user, _action, _targets) {
+function beginaction(_user, _action, _follows) {
 	currentuser = _user
 	currentaction = _action
-	currenttargets = _targets
+	currentfollows = _follows
 	
-	if (!is_array(currenttargets)) { currenttargets	= [currenttargets] }
+	if (!is_array(currentfollows)) { currentfollows	= [currentfollows] }
 	
 	battlewaitremain = battlewaitframes
 	
@@ -105,7 +133,7 @@ function performaction(_waitanimend = false) {
 	
 	if (currentuser.acting) {
 		if (!_waitanimend and !currentuser.actiondone) {
-			currentaction.func(currentuser, currenttargets)
+			currentaction.func(currentuser, currentfollows)
 			currentuser.actiondone = true
 		}
 		
@@ -117,20 +145,20 @@ function performaction(_waitanimend = false) {
 			}
 			
 			if (_waitanimend and !currentuser.actiondone) {
-				currentaction.func(currentuser, currenttargets)
+				currentaction.func(currentuser, currentfollows)
 				currentuser.actiondone = true
 			}
 		}
 		
 		if (variable_struct_exists(currentaction, "effectsprite")) {
-			if (currentaction.effecttarget == MODE.ALWAYS or currentaction.effecttarget == MODE.VARIES and array_length(currenttargets) <= 1) {
-				for (var i = 0; i < array_length(currenttargets); i++) {
-					instance_create_depth(currenttargets[i].x, currenttargets[i].y, currenttargets[i].depth - 1, obj_battleeffect, {sprite_index : currentaction.effectsprite})
+			if (currentaction.effectfollow == MODE.ALWAYS or currentaction.effectfollow == MODE.VARIES and array_length(currentfollows) <= 1) {
+				for (var i = 0; i < array_length(currentfollows); i++) {
+					instance_create_depth(currentfollows[i].x, currentfollows[i].y, currentfollows[i].depth - 1, obj_battleeffect, {sprite_index : currentaction.effectsprite})
 				}
 			} else {
 				var _effectsprite = currentaction.effectsprite
 				
-				if (variable_struct_exists(currentaction, "effectspritenotarget")) { _effectsprite = currentaction.effectspritenotarget }
+				if (variable_struct_exists(currentaction, "effectspritenofollow")) { _effectsprite = currentaction.effectspritenofollow }
 				instance_create_depth(x, y, depth - 100, obj_battleeffect, {sprite_index : _effectsprite})
 			}
 		}

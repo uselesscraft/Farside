@@ -1,2 +1,2 @@
 shakemult = -shakemult
-
+shake -= shakedec

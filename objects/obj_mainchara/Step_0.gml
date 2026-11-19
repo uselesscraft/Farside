@@ -134,7 +134,7 @@ if ((global.playercontrol and canmove) and !global.climbing) {
 	sprite_index = spr_eliasclimb
 	var moving = false
 	
-	if (abs(x - targetlerp) < 0.2 and abs(y - targetlerpy) < 0.2) {
+	if (abs(x - followlerp) < 0.2 and abs(y - followlerpy) < 0.2) {
 		var upKey = keyboard_check(ord("W")) or gamepad_axis_value(0, gp_axislv) < -threshold
 		var downKey = keyboard_check(ord("S")) or gamepad_axis_value(0, gp_axislv) > threshold
 	
@@ -151,18 +151,18 @@ if ((global.playercontrol and canmove) and !global.climbing) {
 		}
 	
 		if (downKey) {
-			targetlerpy += 20
+			followlerpy += 20
 		} else if (upKey) {
-			targetlerpy -= 20
+			followlerpy -= 20
 		}
 		
-		if (heightclamp) { targetlerpy = clamp(targetlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
+		if (heightclamp) { followlerpy = clamp(followlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
 		
 	} else {
-		x = lerp(x, targetlerp, 0.2)
-		y = lerp(y, targetlerpy, 0.2)
+		x = lerp(x, followlerp, 0.2)
+		y = lerp(y, followlerpy, 0.2)
 		
-		if (heightclamp) { targetlerpy = clamp(targetlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
+		if (heightclamp) { followlerpy = clamp(followlerpy, obj_ladderend.y, obj_ladderbegin.y - 15) }
 	}
 }
 

@@ -17,3 +17,5 @@ yto = y
 movecam = false
 spd = 2
 
+freeze = false
+

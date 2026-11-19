@@ -16,13 +16,13 @@ global.enemies =
 			//generic attack script
 			var action = actions[0]
 			
-			var alltargets = array_filter(obj_battlecontroller.partyunits, function(_unit, _index)
+			var allfollows = array_filter(obj_battlecontroller.partyunits, function(_unit, _index)
 			{
 				return instance_exists(_unit) and (_unit.hp > 0) //if hp is higher than 0, it returns true. otherwise, it returns false
 			})
-			var target = alltargets[irandom(array_length(alltargets) - 1)]
+			var follow = allfollows[irandom(array_length(allfollows) - 1)]
 			
-			return[action, target]
+			return[action, follow]
 			
 			//same result could be achieved through an if statement but whatever... dsfgjfgugdsr
 		}

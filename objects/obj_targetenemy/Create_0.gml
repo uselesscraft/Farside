@@ -3,7 +3,7 @@ camera_y = camera_get_view_y(view_camera[0])
 
 plr = obj_mainchara
 
-current_target = plr
+current_follow = plr
 camera_moving = false
 max_distance = 100
 
