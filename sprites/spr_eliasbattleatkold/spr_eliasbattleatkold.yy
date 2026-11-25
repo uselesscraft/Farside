@@ -20,6 +20,8 @@
     {"$GMSpriteFrame":"v1","%Name":"f5fc2fb8-b321-4d43-a213-3f5cec0b4189","name":"f5fc2fb8-b321-4d43-a213-3f5cec0b4189","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"ee49f007-daa5-4114-8560-5e311d850bd4","name":"ee49f007-daa5-4114-8560-5e311d850bd4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"032f2b03-b2ab-41b1-99bd-4d899506d8c0","name":"032f2b03-b2ab-41b1-99bd-4d899506d8c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"68d5e21f-3317-4ec0-8670-804720152260","name":"68d5e21f-3317-4ec0-8670-804720152260","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"30710bd9-caec-4023-adff-a88d130c7c4c","name":"30710bd9-caec-4023-adff-a88d130c7c4c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -71,7 +73,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":8.0,
+    "length":10.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -116,6 +118,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"032f2b03-b2ab-41b1-99bd-4d899506d8c0","path":"sprites/spr_eliasbattleatkold/spr_eliasbattleatkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c58d8c3b-e50d-41d9-899b-b1380b331f7f","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68d5e21f-3317-4ec0-8670-804720152260","path":"sprites/spr_eliasbattleatkold/spr_eliasbattleatkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"92a18f96-6b08-4700-8bf3-c94d2a41da41","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"30710bd9-caec-4023-adff-a88d130c7c4c","path":"sprites/spr_eliasbattleatkold/spr_eliasbattleatkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"241a33a4-fe5d-4610-9d4b-eb1d16e26e43","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
